@@ -1,0 +1,47 @@
+@font-face{font-family:Lovelo;src:url("fonts/lovelo-black.woff2") format("woff2");font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:Montserrat;src:url("fonts/montserrat-400.woff") format("woff");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:Montserrat;src:url("fonts/montserrat-500.woff") format("woff");font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:Montserrat;src:url("fonts/montserrat-600.woff") format("woff");font-style:normal;font-weight:600;font-display:swap}
+@font-face{font-family:Montserrat;src:url("fonts/montserrat-700.woff") format("woff");font-style:normal;font-weight:700;font-display:swap}
+/* Lovelo Black headings paired with Montserrat body and interface text. */
+:root{
+ --body:"Montserrat","Segoe UI",Arial,sans-serif;
+ --display:"Lovelo","Montserrat",Arial,sans-serif;
+ --type-body:1.0625rem;
+ --type-small:.875rem;
+}
+body{font-family:var(--body);font-size:var(--type-body);font-weight:400;line-height:1.6;letter-spacing:0}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.18;letter-spacing:-.025em;overflow-wrap:break-word}
+strong,b{font-weight:700}
+p{line-height:1.65}
+p+p{margin-top:1em}
+.landing h1{font-size:clamp(2.125rem,5vw,4.25rem);line-height:1.12;max-width:19ch}
+.phero h1{font-size:clamp(2.125rem,4.8vw,3.75rem);line-height:1.15}
+.hero-copy h1,.hero-copy h2,.sec-head h2,.quote h2{font-size:clamp(1.875rem,4vw,3.25rem);line-height:1.18}
+.split-copy h2,.callband h2{font-size:clamp(1.75rem,3.2vw,2.75rem);line-height:1.2;text-transform:none;letter-spacing:-.02em}
+.card h3,.pbody h3,.room-caption h3,.studio-preview h3,.campaign-card h3,.campaign-feature h3{font-size:clamp(1.375rem,2.4vw,1.875rem);line-height:1.25;font-weight:700}
+.item-copy h3{font-weight:600;line-height:1.35}
+.hero-copy p,.split-copy p,.landing p.lede,.phero .lede{font-size:clamp(1.0625rem,1.3vw,1.1875rem);line-height:1.65}
+.eyebrow,.pcode,.tag,.facts .wrap,.catnav a,.mosaic figcaption,.dpics figcaption{font-size:.875rem;letter-spacing:.06em;line-height:1.5;font-weight:600}
+.details dt,.num span,label,.pbody .fin b{font-size:.875rem;letter-spacing:.04em;line-height:1.5;font-weight:600}
+.nav,.mobile-nav a{font-size:.9375rem;font-weight:600;letter-spacing:0;line-height:1.5}
+.pill,.top-actions .pill,.pbody .pill,.enq .pill,.msg .pill{font-family:var(--body);font-size:.9375rem;font-weight:600;line-height:1.35;letter-spacing:0}
+input,select,textarea{font:400 1rem/1.5 var(--body)}
+.tabs button,.room-controls button{font-family:var(--body);font-size:.9375rem;line-height:1.35;font-weight:600;letter-spacing:0;text-transform:none}
+.details small,.bandfoot small,.enq small,.msg p,.room-note{font-size:.875rem;line-height:1.6}
+.msg pre,.enq pre{font:400 1rem/1.6 var(--body)}
+.quote h2 em{font-style:normal;font-weight:700}
+@media(max-width:640px){.facts .wrap{font-size:.8125rem;letter-spacing:.04em}.landing img{min-height:680px}.topbar .brand{max-width:150px}}
+
+/* Consistent display type, including headings with older component overrides. */
+h1,h2,h3,h4,h5,h6,.item-copy h3,.sitefoot h3,.topbar .brand-words b{
+ font-family:var(--display);font-weight:700;font-style:normal;text-transform:uppercase;letter-spacing:.015em;line-height:1.2;font-synthesis:none;
+}
+.sitefoot h3{white-space:normal;overflow-wrap:break-word}
+.topbar .brand-words i,.sitefoot .foot-tag{font-family:var(--body);font-style:normal;font-weight:500}
+.split-copy h2,.callband h2{letter-spacing:.015em;text-transform:uppercase}
+button,input,select,textarea{font-family:var(--body)}
+@media(max-width:640px){
+ .landing h1,.phero h1{font-size:clamp(1.8rem,7.4vw,2.5rem);line-height:1.2}
+ .hero-copy h1,.hero-copy h2,.sec-head h2,.quote h2{font-size:clamp(1.65rem,6.5vw,2.2rem)}
+}

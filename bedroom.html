@@ -1,0 +1,1209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="DURSA bedroom collection, Harar, Ethiopia: 13 beds, 16 wardrobes and 5 dressing tables. Call 098 282 8234.">
+<meta name="theme-color" content="#05445c">
+<link rel="icon" type="image/png" sizes="32x32" href="dursa-icon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="dursa-icon-180.png">
+<link rel="manifest" href="site.webmanifest">
+<title>Bedroom Collection | DURSA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+/* Layout: ivory showroom pages. Hero = ghost word + product left, copy right. Split rows, full-bleed "At Home" shots, teal footer band. */
+:root{
+  --ivory:#fdfaf3;
+  --ivory-2:#f7f1e4;
+  --ghost:#f1eadb;
+  --teal:#0d4e65;
+  --teal-deep:#05445c;
+  --gold:#cca971;
+  --gold-line:#d4a64e;
+  --ink:#0b3a52;
+  --ink-soft:#3f5f70;
+  --display:"Playfair Display","Didot","Bodoni 72",Georgia,serif;
+  --body:"Jost","Avenir Next","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--body);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1.05;margin:0;text-wrap:balance;color:var(--ink)}
+p{margin:0}
+:focus-visible{outline:2px solid var(--gold-line);outline-offset:3px}
+.wrap{max-width:1240px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.rule{display:block;width:64px;height:2px;background:var(--gold-line);border:0;margin:0}
+.eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;font-weight:500;color:var(--ink-soft)}
+
+/* buttons */
+.pill{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:48px;padding:0 30px;border:1.5px solid var(--teal);border-radius:999px;background:transparent;color:var(--teal);font:500 .95rem/1 var(--body);text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
+.pill:hover{background:var(--teal);color:var(--ivory)}
+.pill.solid{background:var(--teal);color:var(--ivory)}
+.pill.solid:hover{background:var(--teal-deep)}
+.pill.gold{border-color:var(--gold);color:var(--ivory)}
+.pill.gold:hover{background:var(--gold);color:var(--teal-deep)}
+
+
+/* landing */
+.landing{position:relative;background:var(--teal-deep);color:var(--ivory);overflow:hidden}
+.landing picture,.landing img{display:block;width:100%}
+.landing img{height:clamp(600px,90vh,840px);object-fit:cover;object-position:center 48%}
+.landing::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,68,92,0) 42%,rgba(5,68,92,.72) 76%,rgba(5,68,92,.95) 100%)}
+.landing .copy{position:absolute;z-index:2;left:0;right:0;bottom:0}
+.landing .copy .wrap{padding-block:clamp(28px,5vw,64px);display:grid;gap:18px;justify-items:start}
+.landing h1{color:var(--ivory);font-size:clamp(2.4rem,6vw,5rem);max-width:15ch;text-shadow:0 2px 24px rgba(5,68,92,.35)}
+.landing .eyebrow{color:#f6e3bd;text-shadow:0 1px 12px rgba(5,68,92,.8);background:rgba(5,68,92,.55);padding:6px 12px}
+.landing p.lede{max-width:44ch;color:#e6eef1;font-size:clamp(1rem,1.6vw,1.2rem)}
+.landing .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.pill.ivory{background:var(--ivory);border-color:var(--ivory);color:var(--teal-deep)}
+.pill.ivory:hover{background:var(--gold);border-color:var(--gold);color:var(--teal-deep)}
+.pill.ghost{border-color:rgba(253,250,243,.7);color:var(--ivory)}
+.pill.ghost:hover{background:rgba(253,250,243,.14);color:var(--ivory)}
+.facts{background:var(--teal-deep);border-top:1px solid rgba(204,169,113,.35)}
+.facts .wrap{display:flex;flex-wrap:wrap;gap:8px 36px;padding-block:16px;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#cfe0e6;justify-content:center}
+.facts span b{color:var(--gold);font-weight:500;margin-right:.5em}
+@media (max-width:640px){.landing img{height:640px;object-position:center 40%}.landing::after{background:linear-gradient(180deg,rgba(5,68,92,0) 34%,rgba(5,68,92,.78) 66%,rgba(5,68,92,.96) 100%)}.facts .wrap{justify-content:flex-start;gap:6px 24px;font-size:.7rem}}
+
+/* header */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(253,250,243,.94);backdrop-filter:blur(8px);border-bottom:1px solid #e9dfc9}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--ivory)}
+.topbar .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:80px;gap:16px}
+.nav{display:flex;gap:28px;font-size:.9rem;font-weight:500}
+.nav a{text-decoration:none;padding:6px 0;border-bottom:1.5px solid transparent}
+.nav a:hover{border-bottom-color:var(--gold-line)}
+.menu-btn{display:none;width:44px;height:44px;border:0;background:none;color:var(--ink);cursor:pointer;padding:0}
+.menu-btn svg{width:28px;height:28px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:54px;height:54px;border-radius:50%}
+.brand-text{display:flex;flex-direction:column;line-height:1}
+.brand-name{font-family:var(--display);font-weight:700;font-size:2.15rem;letter-spacing:-.01em;color:var(--teal)}
+.brand-tag{font-size:.5rem;letter-spacing:.24em;font-weight:500;color:var(--teal);margin-top:4px;white-space:nowrap}
+.top-actions{display:flex;justify-content:flex-end}
+.top-actions .pill{min-height:42px;padding:0 22px;font-size:.88rem}
+.top-actions .pill svg{display:none}
+.mobile-nav{display:none}
+
+/* hero blocks */
+.hero{position:relative;overflow:hidden;background:var(--ivory)}
+.hero .ghost{position:absolute;left:-.04em;top:.02em;font-family:var(--display);font-weight:700;font-size:clamp(6.5rem,19vw,17rem);line-height:.9;letter-spacing:-.03em;color:var(--ghost);pointer-events:none;user-select:none;white-space:nowrap}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);align-items:center;gap:clamp(16px,4vw,64px);padding-block:clamp(40px,6vw,88px)}
+.hero figure{margin:0}
+.hero figure img{width:100%;mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 91%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 91%,transparent);mask-composite:intersect}
+.hero-copy{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+.hero-copy h1,.hero-copy h2{font-size:clamp(2.4rem,4.6vw,4rem)}
+.hero-copy p{color:var(--ink-soft);max-width:30ch;font-size:1.05rem}
+.swatches{display:flex;align-items:center;gap:12px;font-size:.95rem;color:var(--ink-soft)}
+.sw{width:42px;height:42px;border-radius:50%;border:1px solid #e0d5bd;flex:none}
+.sw.ivory{background:#efe6d6}.sw.teal{background:var(--teal)}.sw.char{background:#34363a}
+.swatch-row{display:flex;flex-direction:column;gap:10px}
+.swatch-row .dots{display:flex;gap:12px}
+
+/* split rows */
+.split{background:var(--ivory)}
+.split .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);align-items:center;gap:clamp(20px,4vw,56px);padding-block:clamp(24px,4vw,56px)}
+.split.flip .wrap{grid-template-columns:minmax(0,2fr) minmax(0,1fr)}
+.split.flip .split-copy{order:2}
+.split-copy{display:flex;flex-direction:column;gap:18px}
+.split-copy h2{font-size:clamp(1.9rem,3.2vw,2.8rem);text-transform:uppercase;letter-spacing:-.01em;line-height:1.02}
+.split-copy p{color:var(--ink-soft);max-width:26ch;font-size:1.05rem}
+.split figure{margin:0;overflow:hidden}
+.split figure img{width:100%;aspect-ratio:16/10;object-fit:cover}
+
+/* at home */
+.athome{position:relative;margin:0}
+.athome img{width:100%;aspect-ratio:16/8;object-fit:cover;object-position:center 60%}
+.athome img.tall-m{aspect-ratio:16/9}
+.tag{position:absolute;top:clamp(16px,3vw,40px);left:0;background:var(--ivory);padding:18px 28px 14px max(24px,env(safe-area-inset-left,0px));font-size:.8rem;letter-spacing:.3em;font-weight:500;text-transform:uppercase;color:var(--ink)}
+.tag::after{content:"";display:block;width:56px;height:2px;background:var(--gold-line);margin:7px auto 0 0}
+
+/* dining tiles */
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:var(--ivory)}
+.tile{position:relative;margin:0}
+.tile img{width:100%;aspect-ratio:5/4;object-fit:cover}
+.tile figcaption{position:absolute;top:0;left:0;padding:22px 26px;font-family:var(--display);font-weight:600;font-size:clamp(1rem,2vw,1.5rem);letter-spacing:.02em;text-transform:uppercase;color:var(--ink);background:linear-gradient(180deg,rgba(253,250,243,.85),rgba(253,250,243,0));width:100%}
+.tile figcaption::before{content:"";display:block;width:52px;height:2px;background:var(--gold-line);margin-bottom:10px}
+
+/* catalogue */
+.catalogue{background:var(--ivory-2);padding-block:clamp(56px,8vw,112px)}
+.sec-head{display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center;margin-bottom:clamp(32px,5vw,64px)}
+.sec-head h2{font-size:clamp(2.2rem,5vw,3.8rem)}
+.sec-head .rule{margin-inline:auto}
+.sec-head p{color:var(--ink-soft);max-width:46ch}
+.item{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:clamp(20px,4vw,56px);align-items:center;padding-block:clamp(24px,3vw,40px);border-top:1px solid #e2d6bb}
+.item:nth-child(even){grid-template-columns:minmax(0,2fr) minmax(0,1fr)}
+.item:nth-child(even) .item-copy{order:2}
+.item-copy{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.code{font-family:var(--display);font-weight:700;font-size:clamp(2.4rem,4vw,3.4rem);line-height:1;color:var(--ink)}
+.item-copy h3{font-family:var(--body);font-weight:400;font-size:1.25rem;letter-spacing:0;color:var(--ink-soft)}
+.item figure{margin:0}
+.item figure img{width:100%;mix-blend-mode:multiply}
+
+/* bedroom */
+.bedroom{background:var(--ivory);padding-block:clamp(56px,8vw,112px)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,40px)}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,3vw,40px) clamp(16px,2.4vw,32px)}
+@media (max-width:980px){.grid3{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.grid3{grid-template-columns:1fr}}
+.card .img img{aspect-ratio:4/3}
+.card.cut .img{background:var(--ivory-2)}
+.card.cut img{mix-blend-mode:multiply;object-fit:contain;aspect-ratio:4/3}
+.more-head{margin:clamp(40px,6vw,72px) 0 28px;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.more-head h3{font-size:clamp(1.6rem,3vw,2.2rem)}
+.curtains{background:var(--ivory);padding-block:clamp(56px,8vw,112px)}
+.cfeature{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,5vw,72px);align-items:center;max-width:980px;margin-inline:auto}
+.cfeature figure{margin:0}
+.cfeature img{width:100%;box-shadow:0 18px 40px rgba(5,68,92,.14)}
+.cfeature-copy{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.cfeature-copy h3{font-size:clamp(1.8rem,3vw,2.6rem)}
+.cfeature-copy p{color:var(--ink-soft);max-width:40ch}
+.cfeature-copy .fine{font-size:.9rem}
+@media (max-width:760px){.cfeature{grid-template-columns:1fr}.cfeature figure{max-width:460px}}
+.gallery{background:var(--ivory-2);padding-block:clamp(56px,8vw,112px)}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;gap:clamp(8px,1.4vw,16px)}
+.mosaic figure{margin:0;position:relative;overflow:hidden}
+.mosaic figure.wide{grid-column:1/-1}
+.mosaic img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover}
+.mosaic figure.wide img{aspect-ratio:16/8}
+.mosaic figcaption{position:absolute;left:0;bottom:0;padding:12px 18px;background:rgba(253,250,243,.92);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--ink)}
+@media (max-width:640px){.mosaic{grid-template-columns:1fr}.mosaic figure.wide img{aspect-ratio:4/3}}
+.card{margin:0;display:flex;flex-direction:column;gap:18px}
+.card .img{background:#fff;border:1px solid #eadfc7;display:grid;place-items:center;overflow:hidden}
+.card img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.card h3{font-size:1.6rem}
+.card p{color:var(--ink-soft);max-width:38ch}
+
+/* quote / footer */
+.quote{background:var(--teal-deep);color:var(--ivory);padding-block:clamp(56px,8vw,112px)}
+.quote .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px)}
+.quote h2{color:var(--ivory);font-size:clamp(2.2rem,4.6vw,3.6rem)}
+.quote h2 em{font-style:italic;font-weight:500;color:var(--gold)}
+.quote .lead{margin-top:22px;color:#cfdbe0;max-width:40ch}
+.quote .rule{margin-top:26px}
+.details{margin-top:36px;display:grid;gap:0;border-top:1px solid rgba(204,169,113,.4)}
+.details div{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(204,169,113,.4);align-items:baseline}
+.details dt{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.details dd{margin:0;overflow-wrap:anywhere}
+.details small{display:block;color:#b9cad1;font-size:.82rem}
+.details a{text-decoration:none;border-bottom:1px solid rgba(204,169,113,.5)}
+form{display:grid;gap:16px;align-content:start}
+label{display:grid;gap:6px;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+input,select,textarea{width:100%;font:400 1rem/1.4 var(--body);padding:13px 14px;border-radius:10px;border:1px solid rgba(204,169,113,.55);background:rgba(255,255,255,.06);color:var(--ivory);letter-spacing:0;text-transform:none}
+select option{color:#0b3a52}
+input::placeholder,textarea::placeholder{color:#8fa9b4}
+textarea{min-height:110px;resize:vertical}
+.msg{display:grid;gap:12px;padding:18px;border:1px solid var(--gold);border-radius:12px;background:rgba(255,255,255,.06)}
+.msg pre{margin:0;white-space:pre-wrap;font:400 .95rem/1.5 var(--body);color:var(--ivory)}
+.msg .row{display:flex;flex-wrap:wrap;gap:10px}
+.msg .pill{min-height:42px;padding:0 20px;font-size:.88rem}
+.msg p{font-size:.85rem;color:#b9cad1}
+
+.bandfoot{background:var(--teal);border-top:1px solid rgba(204,169,113,.35);color:var(--ivory)}
+.bandfoot .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-block:28px}
+.brand.light .brand-name,.brand.light .brand-tag{color:var(--ivory)}
+.bandfoot small{font-size:.8rem;color:#c5d6dc}
+
+@media (max-width:900px){
+  .topbar .wrap{grid-template-columns:44px 1fr 44px;min-height:72px}
+  .nav,.top-actions .pill span{display:none}
+  .menu-btn{display:block}
+  .top-actions .pill{min-height:44px;width:44px;padding:0;border-radius:50%}
+  .top-actions .pill svg{display:block}
+  .brand{justify-content:center}
+  .brand img{width:46px;height:46px}
+  .brand-name{font-size:1.8rem}
+  .brand-tag{font-size:.42rem}
+  .mobile-nav{display:none;flex-direction:column;background:var(--ivory);border-top:1px solid #e9dfc9}
+  .mobile-nav.open{display:flex}
+  .mobile-nav a{padding:16px max(16px,env(safe-area-inset-left,0px));text-decoration:none;font-weight:500;border-bottom:1px solid #eee4cf}
+  .hero .wrap,.split .wrap,.split.flip .wrap{grid-template-columns:1fr}
+  .hero .wrap{gap:8px}
+  .hero-copy{align-items:flex-start;padding-top:8px}
+  .hero-copy p{max-width:36ch}
+  .split.flip .split-copy{order:0}
+  .item,.item:nth-child(even){grid-template-columns:1fr}
+  .item:nth-child(even) .item-copy{order:0}
+  .quote .wrap{grid-template-columns:1fr}
+  .athome img{aspect-ratio:4/3}
+  .athome img.tall-m{aspect-ratio:9/16;max-height:90vh}
+}
+@media (max-width:640px){
+  .tiles,.pair{grid-template-columns:1fr}
+  .tile img{aspect-ratio:4/3}
+  .details div{grid-template-columns:1fr;gap:4px}
+  .hero .ghost{font-size:30vw}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* bedroom page */
+.phero{background:var(--ivory-2);position:relative;overflow:hidden}
+.phero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center;padding-block:clamp(40px,6vw,88px)}
+.phero h1{font-size:clamp(2.6rem,5.4vw,4.6rem)}
+.phero .lede{color:var(--ink-soft);max-width:44ch;font-size:1.1rem}
+.phero-copy{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+.phero .cta{display:flex;flex-wrap:wrap;gap:12px}
+.phero .mosaic3{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.phero .mosaic3 figure{margin:0;background:#fff;border:1px solid #eadfc7;overflow:hidden}
+.phero .mosaic3 figure:first-child{grid-column:1/-1}
+.phero .mosaic3 img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2}
+.phero .mosaic3 figure:not(:first-child) img{aspect-ratio:4/3}
+.phero .mosaic3 figure:nth-child(3) img{object-fit:contain;padding:6px}
+.catnav{position:sticky;top:80px;z-index:15;background:rgba(253,250,243,.96);backdrop-filter:blur(8px);border-bottom:1px solid #e9dfc9}
+.catnav .wrap{display:flex;gap:8px;overflow-x:auto;padding-block:10px;scrollbar-width:none}
+.catnav a{flex:none;text-decoration:none;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:10px 18px;border:1px solid #e2d6bb;border-radius:999px;color:var(--ink)}
+.catnav a:hover{background:var(--teal);color:var(--ivory);border-color:var(--teal)}
+.catnav a small{color:var(--ink-soft);letter-spacing:.04em;margin-left:.5em}
+.catnav a:hover small{color:#cfe0e6}
+.psec{padding-block:clamp(48px,7vw,96px)}
+.psec.alt{background:var(--ivory-2)}
+.pgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,40px)}
+.pcard,.dcard{display:flex;flex-direction:column;background:var(--ivory);border:1px solid #eadfc7}
+.psec.alt .pcard,.psec.alt .dcard{background:var(--ivory)}
+.pcard figure{margin:0;background:#fff;border-bottom:1px solid #eadfc7}
+.pcard img{width:100%;aspect-ratio:3/2;object-fit:contain;background:#fff}
+.pbody{display:flex;flex-direction:column;gap:10px;align-items:flex-start;padding:clamp(18px,2.4vw,28px)}
+.pcode{font-size:.72rem;letter-spacing:.24em;font-weight:500;color:var(--gold-line)}
+.pbody h3{font-size:clamp(1.5rem,2.4vw,1.9rem)}
+.pbody p{color:var(--ink-soft);max-width:52ch}
+.pbody .fin{font-size:.9rem}
+.pbody .fin b{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);font-weight:500;margin-right:.8em}
+.pbody .pill{margin-top:8px;min-height:44px;padding:0 24px;font-size:.9rem}
+.dgrid{display:grid;gap:clamp(20px,3vw,40px)}
+.dcard{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}
+.dpics{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1px;background:#eadfc7;border-right:1px solid #eadfc7}
+.dpics figure{margin:0;position:relative;background:#fff}
+.dpics img{width:100%;height:100%;object-fit:cover}
+.dpics figure:first-child img{object-fit:contain}
+.dpics figcaption{position:absolute;left:0;bottom:0;padding:6px 12px;background:rgba(253,250,243,.92);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500}
+.dcard .pbody{justify-content:center}
+.callband{background:var(--teal-deep);color:var(--ivory);padding-block:clamp(48px,7vw,88px)}
+.callband .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center}
+.callband h2{color:var(--ivory);font-size:clamp(2rem,4vw,3.2rem)}
+.callband h2 em{font-style:italic;color:var(--gold);font-weight:500}
+.callband p{color:#cfdbe0;max-width:44ch;margin-top:16px}
+.callband .rule{margin-top:22px}
+.numbers{display:grid;gap:12px}
+.num{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;border:1px solid rgba(204,169,113,.55);border-radius:12px;text-decoration:none;background:rgba(255,255,255,.05)}
+.num:hover{background:rgba(204,169,113,.18)}
+.num span{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.num b{font-family:var(--display);font-size:clamp(1.4rem,3vw,1.9rem);font-weight:600;letter-spacing:.01em;white-space:nowrap}
+.enq{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--teal-deep);color:var(--ivory);border-top:2px solid var(--gold-line);padding:14px max(16px,env(safe-area-inset-left,0px)) calc(14px + env(safe-area-inset-bottom,0px));transform:translateY(110%);visibility:hidden;transition:transform .25s,visibility .25s}
+.enq.open{transform:none;visibility:visible}
+.enq .in{max-width:1240px;margin-inline:auto;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+.enq pre{margin:0;flex:1 1 280px;white-space:pre-wrap;font:400 .95rem/1.5 var(--body)}
+.enq .row{display:flex;flex-wrap:wrap;gap:8px}
+.enq .pill{min-height:42px;padding:0 18px;font-size:.88rem}
+.enq .x{background:none;border:0;color:var(--ivory);font-size:1.6rem;line-height:1;cursor:pointer;width:40px;height:40px}
+.enq small{flex-basis:100%;color:#b9cad1;font-size:.8rem}
+@media (max-width:900px){
+  .phero .wrap,.callband .wrap{grid-template-columns:1fr}
+  .catnav{top:72px}
+  .dcard{grid-template-columns:1fr}
+  .dpics{border-right:0;border-bottom:1px solid #eadfc7}
+}
+@media (max-width:640px){
+  .pgrid{grid-template-columns:1fr}
+  .num{flex-direction:column;align-items:flex-start;gap:4px}
+}
+</style>
+<link rel="stylesheet" href="site-fixes.css">
+<link rel="stylesheet" href="typography.css">
+<link rel="stylesheet" href="footer.css">
+</head>
+<body>
+<a class="skip-link" href="#top">Skip to content</a>
+<header class="topbar">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main"><a href="living.html#majlis">Majlis</a><a href="living.html">Living</a><a href="index.html#dining">Dining</a><a href="office.html">Office</a><a href="curtains.html">Curtains</a><a href="index.html#catalogue">Catalogue</a><a href="bedroom.html" aria-current="page" style="border-bottom-color:var(--gold-line)">Bedroom</a></nav>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a class="brand" href="index.html" aria-label="DURSA Arabian Majlis &amp; Furniture, home">
+      <img class="brand-logo" src="dursa-logo.webp" width="640" height="640" alt="DURSA Arabian Majlis &amp; Furniture" decoding="async">
+      <span class="brand-words"><b>DURSA</b><i>Arabian Majlis &amp; Furniture</i><u aria-hidden="true"></u></span>
+    </a>
+    <div class="top-actions">
+      <a class="pill" href="tel:+251982828234" aria-label="Call 098 282 8234"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span>Call 098 282 8234</span></a>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile"><a href="living.html#majlis">Majlis</a><a href="living.html">Living</a><a href="index.html#dining">Dining</a><a href="office.html">Office</a><a href="curtains.html">Curtains</a><a href="index.html#catalogue">Catalogue</a><a href="bedroom.html">Bedroom</a><a href="contact.html">Contact</a><a href="index.html#gallery">Gallery</a><a href="index.html#visit">Visit</a><a href="#contact">Call us</a></nav>
+</header>
+
+<main id="top" tabindex="-1">
+  <section class="phero" aria-labelledby="h-bed">
+    <div class="wrap">
+      <div class="phero-copy">
+        <span class="eyebrow">Bedroom</span>
+        <h1 id="h-bed">The Bedroom Collection</h1>
+        <hr class="rule">
+        <p class="lede">Beds, wardrobes and dressing tables in velvet, lacquer, mirror and gold. Choose a design, then tell us your room size and finish.</p>
+        <div class="cta">
+          <a class="pill solid" href="#beds">See the beds</a>
+          <a class="pill" href="#contact">Call to order</a>
+        </div>
+      </div>
+      <div class="mosaic3">
+        <figure><img src="bed-02.webp" alt="DURSA Royal bed in blue velvet and gold"></figure>
+        <figure><img src="wardrobe-06.webp" alt="DURSA Royal Blue wardrobe"></figure>
+        <figure><img src="dressing-02-studio.webp" alt="DURSA round-mirror dressing table"></figure>
+      </div>
+    </div>
+  </section>
+
+  <nav class="catnav" aria-label="Bedroom categories"><div class="wrap">
+    <a href="#studio-selection">Three views</a><a href="#showroom-floor">Showroom</a><a href="#complete-sets">Complete sets</a><a href="#beds">Beds<small>13</small></a><a href="#wardrobes">Wardrobes<small>16</small></a><a href="#dressing">Dressing Tables<small>5</small></a><a href="#studio-beds">Studio Beds<small>13</small></a><a href="#studio-sets">Studio Sets<small>3</small></a><a href="#studio-wardrobes">Studio Wardrobes<small>7</small></a><a href="#studio-dressing">Studio Dressing<small>6</small></a><a href="#mirrors">Mirrors</a><a href="#contact">Contact</a>
+  </div></nav>
+
+  <section class="psec" id="studio-selection" aria-labelledby="h-studio-selection"><div class="wrap"><div class="sec-head"><span class="eyebrow">From our showroom</span><h2 id="h-studio-selection">Bedroom Collection — Three Views</h2><hr class="rule"><p>Explore each design in the studio, a showroom setting and a styled home. These digitally styled visualizations show possible settings; confirm furniture details and dimensions with us.</p></div><div class="studio-grid"><article class="pcard" id="royal-blue-bed-studio"><div class="room-gallery" data-room-gallery><div class="room-frames"><img id="bedroom-royal-blue-bed-studio" data-room-image="studio" src="royal-blue-bed-studio.webp" width="1402" height="1122" alt="Royal Blue Bed — studio visualization" loading="lazy" decoding="async"><img id="bedroom-royal-blue-bed-showroom" data-room-image="showroom" src="royal-blue-bed-showroom.webp" width="1402" height="1122" alt="Royal Blue Bed — showroom visualization" loading="lazy" decoding="async" hidden><img id="bedroom-royal-blue-bed-home" data-room-image="home" src="royal-blue-bed-home.webp" width="1402" height="1122" alt="Royal Blue Bed — at home visualization" loading="lazy" decoding="async" hidden></div><div class="room-controls" role="group" aria-label="Royal Blue Bed photography views"><button type="button" data-room-view="studio" aria-controls="bedroom-royal-blue-bed-studio" aria-pressed="true">Studio</button><button type="button" data-room-view="showroom" aria-controls="bedroom-royal-blue-bed-showroom" aria-pressed="false">Showroom</button><button type="button" data-room-view="home" aria-controls="bedroom-royal-blue-bed-home" aria-pressed="false">At Home</button></div></div><div class="pbody"><h3>Royal Blue Bed</h3><p>Blue upholstered headboard with angled metallic trim, ivory mirrored side units and plum-and-ivory bedding.</p><button class="pill" type="button" data-design="Royal Blue Bed — studio selection">Ask about this design</button></div></article>
+<article class="pcard" id="ivory-gold-wardrobe-vanity-studio"><div class="room-gallery" data-room-gallery><div class="room-frames"><img id="bedroom-ivory-gold-wardrobe-vanity-studio" data-room-image="studio" src="ivory-gold-wardrobe-vanity-studio.webp" width="1402" height="1122" alt="Ivory &amp; Gold Wardrobe and Vanity — studio visualization" loading="lazy" decoding="async"><img id="bedroom-ivory-gold-wardrobe-vanity-showroom" data-room-image="showroom" src="ivory-gold-wardrobe-vanity-showroom.webp" width="1402" height="1122" alt="Ivory &amp; Gold Wardrobe and Vanity — showroom visualization" loading="lazy" decoding="async" hidden><img id="bedroom-ivory-gold-wardrobe-vanity-home" data-room-image="home" src="ivory-gold-wardrobe-vanity-home.webp" width="1402" height="1122" alt="Ivory &amp; Gold Wardrobe and Vanity — at home visualization" loading="lazy" decoding="async" hidden></div><div class="room-controls" role="group" aria-label="Ivory &amp; Gold Wardrobe and Vanity photography views"><button type="button" data-room-view="studio" aria-controls="bedroom-ivory-gold-wardrobe-vanity-studio" aria-pressed="true">Studio</button><button type="button" data-room-view="showroom" aria-controls="bedroom-ivory-gold-wardrobe-vanity-showroom" aria-pressed="false">Showroom</button><button type="button" data-room-view="home" aria-controls="bedroom-ivory-gold-wardrobe-vanity-home" aria-pressed="false">At Home</button></div></div><div class="pbody"><h3>Ivory &amp; Gold Wardrobe and Vanity</h3><p>Ivory doors, fluted detailing, curved gold inlays, overhead cabinets and an attached vanity with drawers and stool.</p><button class="pill" type="button" data-design="Ivory &amp; Gold Wardrobe and Vanity — studio selection">Ask about this design</button></div></article>
+<article class="pcard" id="black-ivory-bed-studio"><div class="room-gallery" data-room-gallery><div class="room-frames"><img id="bedroom-black-ivory-bed-studio" data-room-image="studio" src="black-ivory-bed-studio.webp" width="1402" height="1122" alt="Black &amp; Ivory Bed — studio visualization" loading="lazy" decoding="async"><img id="bedroom-black-ivory-bed-showroom" data-room-image="showroom" src="black-ivory-bed-showroom.webp" width="1402" height="1122" alt="Black &amp; Ivory Bed — showroom visualization" loading="lazy" decoding="async" hidden><img id="bedroom-black-ivory-bed-home" data-room-image="home" src="black-ivory-bed-home.webp" width="1402" height="1122" alt="Black &amp; Ivory Bed — at home visualization" loading="lazy" decoding="async" hidden></div><div class="room-controls" role="group" aria-label="Black &amp; Ivory Bed photography views"><button type="button" data-room-view="studio" aria-controls="bedroom-black-ivory-bed-studio" aria-pressed="true">Studio</button><button type="button" data-room-view="showroom" aria-controls="bedroom-black-ivory-bed-showroom" aria-pressed="false">Showroom</button><button type="button" data-room-view="home" aria-controls="bedroom-black-ivory-bed-home" aria-pressed="false">At Home</button></div></div><div class="pbody"><h3>Black &amp; Ivory Bed</h3><p>Ivory headboard and footboard with black outlines, matching bedside units and blue-and-ivory bedding.</p><button class="pill" type="button" data-design="Black &amp; Ivory Bed — studio selection">Ask about this design</button></div></article>
+<article class="pcard" id="ivory-geometric-bed-studio"><div class="room-gallery" data-room-gallery><div class="room-frames"><img id="bedroom-ivory-geometric-bed-studio" data-room-image="studio" src="ivory-geometric-bed-studio.webp" width="1402" height="1122" alt="Ivory Geometric Bed — studio visualization" loading="lazy" decoding="async"><img id="bedroom-ivory-geometric-bed-showroom" data-room-image="showroom" src="ivory-geometric-bed-showroom.webp" width="1402" height="1122" alt="Ivory Geometric Bed — showroom visualization" loading="lazy" decoding="async" hidden><img id="bedroom-ivory-geometric-bed-home" data-room-image="home" src="ivory-geometric-bed-home.webp" width="1402" height="1122" alt="Ivory Geometric Bed — at home visualization" loading="lazy" decoding="async" hidden></div><div class="room-controls" role="group" aria-label="Ivory Geometric Bed photography views"><button type="button" data-room-view="studio" aria-controls="bedroom-ivory-geometric-bed-studio" aria-pressed="true">Studio</button><button type="button" data-room-view="showroom" aria-controls="bedroom-ivory-geometric-bed-showroom" aria-pressed="false">Showroom</button><button type="button" data-room-view="home" aria-controls="bedroom-ivory-geometric-bed-home" aria-pressed="false">At Home</button></div></div><div class="pbody"><h3>Ivory Geometric Bed</h3><p>Padded geometric headboard with gold accents, integrated side panels and ivory bedding.</p><button class="pill" type="button" data-design="Ivory Geometric Bed — studio selection">Ask about this design</button></div></article>
+</div></div></section>
+  <section class="psec alt" id="showroom-floor" aria-labelledby="h-showfloor"><div class="wrap">
+    <div class="showfloor">
+      <figure><img src="showroom-bedroom-floor.webp" width="1400" height="1867" alt="DURSA showroom floor with an ivory and gold upholstered bed, mirror-and-gold headboards on shelves, and the DURSA sign on the back wall" loading="lazy" decoding="async"></figure>
+      <div class="showfloor-copy"><span class="eyebrow">In the showroom</span><h2 id="h-showfloor">On the showroom floor</h2><hr class="rule"><p>A real photo from our Harar showroom: ivory and gold beds with lit side panels, headboards in mirror, velvet and gold, and bedside tables. Visit to see the upholstery and finishes in person, then choose your fabric and colour.</p><a class="pill" href="#contact">Call to visit</a></div>
+    </div>
+  </div></section>
+  <section class="psec" id="complete-sets" aria-labelledby="h-complete-sets"><div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Premium collection</span><h2 id="h-complete-sets">Complete Bedroom Collections</h2><hr class="rule"><p>Explore coordinated beds, wardrobes, dressing tables and nightstands. Ask us about your preferred design, finish and room size.</p></div>
+    <div class="campaign-grid">
+      <figure class="campaign-card">
+        <a href="bedroom-black-ivory-campaign.webp" aria-label="View full-size Black &amp; Ivory collection image"><img src="bedroom-black-ivory-campaign.webp" width="864" height="1536" loading="lazy" decoding="async" alt="Black and ivory bedroom campaign with an outlined headboard, illuminated wardrobe, dressing table and matching nightstand."></a>
+        <figcaption><h3>Black &amp; Ivory</h3><p>Ivory finishes, bold black outlines and warm lighting.</p><button type="button" class="pill" data-design="Complete Bedroom Set — Black &amp; Ivory">Ask about this collection</button></figcaption>
+      </figure>
+      <figure class="campaign-card">
+        <a href="bedroom-royal-blue-campaign.webp" aria-label="View full-size Royal Blue &amp; Gold collection image"><img src="bedroom-royal-blue-campaign.webp" width="1024" height="1536" loading="lazy" decoding="async" alt="Royal blue and gold bedroom campaign with a velvet bed, ivory wardrobe, dressing table and nightstand in a coordinated home setting."></a>
+        <figcaption><h3>Royal Blue &amp; Gold</h3><p>Royal blue upholstery with ivory furniture and gold accents.</p><button type="button" class="pill" data-design="Complete Bedroom Set — Royal Blue &amp; Gold">Ask about this collection</button></figcaption>
+      </figure>
+    </div>
+  </div></section>
+
+  <section class="psec" id="beds" aria-labelledby="h-beds">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">01 · Beds</span><h2 id="h-beds">Beds</h2><hr class="rule"><p>Upholstered, lacquered and mirror-and-gold beds, most shown with matching bedside tables.</p></div>
+      <div class="pgrid">
+<article class="pcard" id="bed-01">
+  <figure><img src="bed-01.webp" loading="lazy" width="1200" height="800" alt="DURSA Emerald bed: Dark-wood frame with an ivory surround and an emerald channelled panel, finished with a slim gold bar. Matching dark-wood bedside tables." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">BED-01</span>
+    <h3>Emerald</h3>
+    <p>Dark-wood frame with an ivory surround and an emerald channelled panel, finished with a slim gold bar. Matching dark-wood bedside tables.</p>
+    <p class="fin"><b>Finish</b> Emerald, ivory, dark wood</p>
+    <button class="pill" type="button" data-design="BED-01 Emerald">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="bed-02">
+  <figure><img src="bed-02.webp" loading="lazy" width="1200" height="800" alt="DURSA Royal bed: Royal blue velvet headboard with angled gold inlay strips and a cream storage base. Cream bedside units with mirrored, lit display shelves." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">BED-02</span>
+    <h3>Royal</h3>
+    <p>Royal blue velvet headboard with angled gold inlay strips and a cream storage base. Cream bedside units with mirrored, lit display shelves.</p>
+    <p class="fin"><b>Finish</b> Royal blue, cream, gold</p>
+    <button class="pill" type="button" data-design="BED-02 Royal">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="bed-03">
+  <figure><img src="bed-03.webp" loading="lazy" width="1200" height="800" alt="DURSA Modern bed: Wide brown channelled headboard on a low floating base with a warm gold under-glow. Walnut bedside tables with drawers." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">BED-03</span>
+    <h3>Modern</h3>
+    <p>Wide brown channelled headboard on a low floating base with a warm gold under-glow. Walnut bedside tables with drawers.</p>
+    <p class="fin"><b>Finish</b> Chocolate brown, walnut, gold</p>
+    <button class="pill" type="button" data-design="BED-03 Modern">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="bed-04">
+  <figure><img src="bed-04.webp" loading="lazy" width="1200" height="800" alt="DURSA Luxe bed: Tall cream channelled headboard with arched lit niches at each side, a gold-trimmed base and taupe bedside tables." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">BED-04</span>
+    <h3>Luxe</h3>
+    <p>Tall cream channelled headboard with arched lit niches at each side, a gold-trimmed base and taupe bedside tables.</p>
+    <p class="fin"><b>Finish</b> Cream, taupe, gold</p>
+    <button class="pill" type="button" data-design="BED-04 Luxe">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="bed-05">
+  <figure><img src="bed-05.webp" loading="lazy" width="1200" height="800" alt="DURSA Velvet bed: Tall navy velvet headboard with vertical channelling and a clean platform base set on a brushed gold plinth." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">BED-05</span>
+    <h3>Velvet</h3>
+    <p>Tall navy velvet headboard with vertical channelling and a clean platform base set on a brushed gold plinth.</p>
+    <p class="fin"><b>Finish</b> Navy velvet, gold</p>
+    <button class="pill" type="button" data-design="BED-05 Velvet">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="bed-06">
+  <figure><img src="bed-06.webp" loading="lazy" width="1200" height="800" alt="DURSA Orion bed: White lacquer bed with bold black line-art on the headboard and base, lit side panels and matching white bedside tables." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">BED-06</span>
+    <h3>Orion</h3>
+    <p>White lacquer bed with bold black line-art on the headboard and base, lit side panels and matching white bedside tables.</p>
+    <p class="fin"><b>Finish</b> White, black, gold</p>
+    <button class="pill" type="button" data-design="BED-06 Orion">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="bed-07">
+  <figure><img src="bed-07.webp" loading="lazy" width="1200" height="800" alt="DURSA Majestic bed: Mirror-and-gold framed headboard with lit side towers, an ivory gold-framed footboard and bedside units to match." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">BED-07</span>
+    <h3>Majestic</h3>
+    <p>Mirror-and-gold framed headboard with lit side towers, an ivory gold-framed footboard and bedside units to match.</p>
+    <p class="fin"><b>Finish</b> Ivory, mirror, gold</p>
+    <button class="pill" type="button" data-design="BED-07 Majestic">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="bed-08">
+  <figure><img src="bed-08.webp" loading="lazy" width="1200" height="800" alt="DURSA Prestige bed: Champagne diamond-tufted headboard and footboard with gold buttons. Shown with bedside tables and table lamps." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">BED-08</span>
+    <h3>Prestige</h3>
+    <p>Champagne diamond-tufted headboard and footboard with gold buttons. Shown with bedside tables and table lamps.</p>
+    <p class="fin"><b>Finish</b> Champagne, gold, walnut</p>
+    <button class="pill" type="button" data-design="BED-08 Prestige">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="bed-09">
+  <figure><img src="bed-09.webp" loading="lazy" width="1200" height="800" alt="DURSA Vogue bed: Wide charcoal-grey channelled headboard that wraps past the mattress, on a low upholstered platform base." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">BED-09</span>
+    <h3>Vogue</h3>
+    <p>Wide charcoal-grey channelled headboard that wraps past the mattress, on a low upholstered platform base.</p>
+    <p class="fin"><b>Finish</b> Charcoal grey</p>
+    <button class="pill" type="button" data-design="BED-09 Vogue">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="bed-10">
+  <figure><img src="bed-10.webp" loading="lazy" width="1200" height="800" alt="DURSA Radiance bed: Ivory and gold geometric headboard with mirrored arches, plus a chevron-quilted storage footboard with gold trim." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">BED-10</span>
+    <h3>Radiance</h3>
+    <p>Ivory and gold geometric headboard with mirrored arches, plus a chevron-quilted storage footboard with gold trim.</p>
+    <p class="fin"><b>Finish</b> Ivory, mirror, gold</p>
+    <button class="pill" type="button" data-design="BED-10 Radiance">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="bed-11">
+  <figure><img src="bed-11.webp" loading="lazy" width="736" height="920" alt="DURSA bed: Navy Lacquer" decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">BED-11</span>
+    <h3>Navy Lacquer</h3>
+    <p>Navy wood-grain headboard in stepped panels with a slim steel line, matching bedside tables on steel legs and white quilted bedding.</p>
+    <p class="fin"><b>Finish</b> Navy, steel, white</p>
+    <button class="pill" type="button" data-design="BED-11 Navy Lacquer">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="bed-12">
+  <figure><img src="bed-12.webp" loading="lazy" width="719" height="635" alt="DURSA bed: Black Velvet Panel" decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">BED-12</span>
+    <h3>Black Velvet Panel</h3>
+    <p>Wide black velvet panelled headboard and bench base trimmed in gold, with matching bedside tables and purple bedding.</p>
+    <p class="fin"><b>Finish</b> Black, gold, purple</p>
+    <button class="pill" type="button" data-design="BED-12 Black Velvet Panel">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="bed-13">
+  <figure><img src="bed-13.webp" loading="lazy" width="400" height="400" alt="DURSA bed: Ivory Gold-Accent Storage" decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">BED-13</span>
+    <h3>Ivory Gold-Accent Storage</h3>
+    <p>Ivory padded headboard in large panels with slim gold bars, and a matching storage bench on gold feet.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="BED-13 Ivory Gold-Accent Storage">Ask about this design</button>
+  </div>
+</article>
+      </div>
+    </div>
+  </section>
+
+  <section class="psec alt" id="wardrobes" aria-labelledby="h-ward">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">02 · Wardrobes</span><h2 id="h-ward">Wardrobes</h2><hr class="rule"><p>From plain ivory doors to glass-fronted and built-in vanity wardrobes.</p></div>
+      <div class="pgrid">
+<article class="pcard" id="wrd-01">
+  <figure><img src="wardrobe-01.webp" loading="lazy" width="1200" height="800" alt="DURSA Modern Glass wardrobe: Ivory doors with a black-framed glass centre showing a lit hanging rail, two drawers below and black recessed handles." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-01</span>
+    <h3>Modern Glass</h3>
+    <p>Ivory doors with a black-framed glass centre showing a lit hanging rail, two drawers below and black recessed handles.</p>
+    <p class="fin"><b>Finish</b> Ivory, black, glass</p>
+    <button class="pill" type="button" data-design="WRD-01 Modern Glass">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-02">
+  <figure><img src="wardrobe-02.webp" loading="lazy" width="1200" height="800" alt="DURSA Walnut Display wardrobe: Greige doors with a black-framed glass centre, lit drawers and a walnut open-shelf tower at the side." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-02</span>
+    <h3>Walnut Display</h3>
+    <p>Greige doors with a black-framed glass centre, lit drawers and a walnut open-shelf tower at the side.</p>
+    <p class="fin"><b>Finish</b> Greige, black, walnut</p>
+    <button class="pill" type="button" data-design="WRD-02 Walnut Display">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-03">
+  <figure><img src="wardrobe-03.webp" loading="lazy" width="1200" height="800" alt="DURSA Ivory Vanity wardrobe: Ivory wardrobe with gold trim and arched door panels, with a lit vanity, mirror, stool and drawers built into one end." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-03</span>
+    <h3>Ivory Vanity</h3>
+    <p>Ivory wardrobe with gold trim and arched door panels, with a lit vanity, mirror, stool and drawers built into one end.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="WRD-03 Ivory Vanity">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-04">
+  <figure><img src="wardrobe-04.webp" loading="lazy" width="1200" height="800" alt="DURSA Golden Classic wardrobe: Tall high-gloss ivory wardrobe with gold-outlined panels, overhead cabinets and a side dressing unit with drawers." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-04</span>
+    <h3>Golden Classic</h3>
+    <p>Tall high-gloss ivory wardrobe with gold-outlined panels, overhead cabinets and a side dressing unit with drawers.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="WRD-04 Golden Classic">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-05">
+  <figure><img src="wardrobe-05.webp" loading="lazy" width="1200" height="800" alt="DURSA Ivory Minimalist wardrobe: Plain wood-grain ivory doors with thin gold lines, overhead cabinets and two centre drawers." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-05</span>
+    <h3>Ivory Minimalist</h3>
+    <p>Plain wood-grain ivory doors with thin gold lines, overhead cabinets and two centre drawers.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="WRD-05 Ivory Minimalist">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-06">
+  <figure><img src="wardrobe-06.webp" loading="lazy" width="1200" height="800" alt="DURSA Royal Blue wardrobe: Royal blue and white high-gloss doors with gold handles, spotlights above and curved lit shelves at the corner." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-06</span>
+    <h3>Royal Blue</h3>
+    <p>Royal blue and white high-gloss doors with gold handles, spotlights above and curved lit shelves at the corner.</p>
+    <p class="fin"><b>Finish</b> Royal blue, white, gold</p>
+    <button class="pill" type="button" data-design="WRD-06 Royal Blue">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-07">
+  <figure><img src="wardrobe-07.webp" loading="lazy" width="1200" height="800" alt="DURSA Walnut Luxury wardrobe: Charcoal-framed wardrobe with a gold-edged, lit glass display section, open shelves, drawers and white gloss doors." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-07</span>
+    <h3>Walnut Luxury</h3>
+    <p>Charcoal-framed wardrobe with a gold-edged, lit glass display section, open shelves, drawers and white gloss doors.</p>
+    <p class="fin"><b>Finish</b> Charcoal, white, gold</p>
+    <button class="pill" type="button" data-design="WRD-07 Walnut Luxury">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-08">
+  <figure><img src="wardrobe-08.webp" loading="lazy" width="1200" height="800" alt="DURSA Golden Mirror wardrobe: White lacquer wardrobe with mirrored centre doors and a gold V-shaped lattice band across the front." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-08</span>
+    <h3>Golden Mirror</h3>
+    <p>White lacquer wardrobe with mirrored centre doors and a gold V-shaped lattice band across the front.</p>
+    <p class="fin"><b>Finish</b> White, mirror, gold</p>
+    <button class="pill" type="button" data-design="WRD-08 Golden Mirror">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-09">
+  <figure><img src="wardrobe-09.webp" loading="lazy" width="1200" height="800" alt="DURSA Luxury Cream Vanity wardrobe: Cream wardrobe with a built-in vanity: round lit mirror, lit shelves, drawers and a gold-framed stool, with a walnut side unit." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-09</span>
+    <h3>Luxury Cream Vanity</h3>
+    <p>Cream wardrobe with a built-in vanity: round lit mirror, lit shelves, drawers and a gold-framed stool, with a walnut side unit.</p>
+    <p class="fin"><b>Finish</b> Cream, walnut, gold</p>
+    <button class="pill" type="button" data-design="WRD-09 Luxury Cream Vanity">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-10">
+  <figure><img src="wardrobe-10.webp" loading="lazy" width="1200" height="800" alt="DURSA Charcoal Luxury wardrobe: Charcoal doors with black handles and a built-in vanity with mirror, fluted wood panel, lit shelves and a round stool." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-10</span>
+    <h3>Charcoal Luxury</h3>
+    <p>Charcoal doors with black handles and a built-in vanity with mirror, fluted wood panel, lit shelves and a round stool.</p>
+    <p class="fin"><b>Finish</b> Charcoal, wood</p>
+    <button class="pill" type="button" data-design="WRD-10 Charcoal Luxury">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-11">
+  <figure><img src="wardrobe-11.webp" loading="lazy" width="1200" height="800" alt="DURSA Navy Oak wardrobe: Navy doors framed in oak, with a vanity and drawer unit on the left, a fluted navy panel and a mirror." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-11</span>
+    <h3>Navy Oak</h3>
+    <p>Navy doors framed in oak, with a vanity and drawer unit on the left, a fluted navy panel and a mirror.</p>
+    <p class="fin"><b>Finish</b> Navy, oak</p>
+    <button class="pill" type="button" data-design="WRD-11 Navy Oak">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-12">
+  <figure><img src="wardrobe-12.webp" loading="lazy" width="1200" height="800" alt="DURSA Emerald &amp; Cream wardrobe: Cream doors with emerald overhead cabinets and gold handles. Built-in vanity with a lit mirror and an emerald stool." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-12</span>
+    <h3>Emerald &amp; Cream</h3>
+    <p>Cream doors with emerald overhead cabinets and gold handles. Built-in vanity with a lit mirror and an emerald stool.</p>
+    <p class="fin"><b>Finish</b> Cream, emerald, gold</p>
+    <button class="pill" type="button" data-design="WRD-12 Emerald &amp; Cream">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-13">
+  <figure><img src="wardrobe-13.webp" loading="lazy" width="1200" height="800" alt="DURSA Walnut Vanity wardrobe: Walnut doors with white overhead cabinets, a central mirror over a built-in dressing desk and a white open-shelf tower." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-13</span>
+    <h3>Walnut Vanity</h3>
+    <p>Walnut doors with white overhead cabinets, a central mirror over a built-in dressing desk and a white open-shelf tower.</p>
+    <p class="fin"><b>Finish</b> Walnut, white</p>
+    <button class="pill" type="button" data-design="WRD-13 Walnut Vanity">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-14">
+  <figure><img src="wrd-14.webp" loading="lazy" width="736" height="736" alt="DURSA wardrobe: White Sliding Door" decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-14</span>
+    <h3>White Sliding Door</h3>
+    <p>Two-door white sliding wardrobe with gold lines and a bronze glass band, plus top cabinets, corner shelves and a three-drawer unit.</p>
+    <p class="fin"><b>Finish</b> White, gold, bronze</p>
+    <button class="pill" type="button" data-design="WRD-14 White Sliding Door">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-15">
+  <figure><img src="wrd-15.webp" loading="lazy" width="735" height="919" alt="DURSA wardrobe: Grey Six-Door with Mirror" decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-15</span>
+    <h3>Grey Six-Door with Mirror</h3>
+    <p>Six-door grey wardrobe with long silver handles, a fluted dark panel, a mirrored door and four drawers.</p>
+    <p class="fin"><b>Finish</b> Grey, silver</p>
+    <button class="pill" type="button" data-design="WRD-15 Grey Six-Door with Mirror">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="wrd-16">
+  <figure><img src="wrd-16.webp" loading="lazy" width="736" height="981" alt="DURSA wardrobe: White Gloss with Lit Glass" decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">WRD-16</span>
+    <h3>White Gloss with Lit Glass</h3>
+    <p>High-gloss white wardrobe with long black handles and a black-framed glass section with lit shelves and drawers.</p>
+    <p class="fin"><b>Finish</b> White, black</p>
+    <button class="pill" type="button" data-design="WRD-16 White Gloss with Lit Glass">Ask about this design</button>
+  </div>
+</article>
+      </div>
+    </div>
+  </section>
+
+  <section class="psec" id="dressing" aria-labelledby="h-dress">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">03 · Dressing Tables</span><h2 id="h-dress">Dressing Tables</h2><hr class="rule"><p>Lit mirrors, shelves for perfume and accessories, drawers with gold handles. Each is shown on white and in a bedroom.</p></div>
+      <div class="dgrid">
+<article class="dcard" id="dt-01">
+  <div class="dpics">
+    <figure><img src="dressing-01-studio.webp" loading="lazy" width="700" height="940" alt="DURSA Walnut Tower dressing table, studio view" decoding="async"><figcaption>Studio</figcaption></figure>
+    <figure><img src="dressing-01-home.webp" loading="lazy" width="698" height="452" alt="DURSA Walnut Tower dressing table styled in a bedroom" decoding="async"><figcaption>In a bedroom</figcaption></figure>
+  </div>
+  <div class="pbody">
+    <span class="pcode">DT-01</span>
+    <h3>Walnut Tower</h3>
+    <p>Walnut tower with lit shelves for perfume and accessories, an oval mirror with a LED ring, a second tall mirror and three fluted white drawers on gold legs.</p>
+    <p class="fin"><b>Finish</b> White, walnut, gold</p>
+    <button class="pill" type="button" data-design="DT-01 Walnut Tower">Ask about this design</button>
+  </div>
+</article>
+<article class="dcard" id="dt-02">
+  <div class="dpics">
+    <figure><img src="dressing-02-studio.webp" loading="lazy" width="700" height="940" alt="DURSA Round Mirror dressing table, studio view" decoding="async"><figcaption>Studio</figcaption></figure>
+    <figure><img src="dressing-02-home.webp" loading="lazy" width="698" height="452" alt="DURSA Round Mirror dressing table styled in a bedroom" decoding="async"><figcaption>In a bedroom</figcaption></figure>
+  </div>
+  <div class="pbody">
+    <span class="pcode">DT-02</span>
+    <h3>Round Mirror</h3>
+    <p>Round backlit mirror, a tall black-framed glass display tower, drawers with gold ring pulls and a scalloped blush-pink chair.</p>
+    <p class="fin"><b>Finish</b> White, black, gold</p>
+    <button class="pill" type="button" data-design="DT-02 Round Mirror">Ask about this design</button>
+  </div>
+</article>
+<article class="dcard" id="dt-03">
+  <div class="dpics">
+    <figure><img src="dressing-03-studio.webp" loading="lazy" width="700" height="940" alt="DURSA Classic Arch dressing table, studio view" decoding="async"><figcaption>Studio</figcaption></figure>
+    <figure><img src="dressing-03-home.webp" loading="lazy" width="698" height="452" alt="DURSA Classic Arch dressing table styled in a bedroom" decoding="async"><figcaption>In a bedroom</figcaption></figure>
+  </div>
+  <div class="pbody">
+    <span class="pcode">DT-03</span>
+    <h3>Classic Arch</h3>
+    <p>White arched top with carved detail, an oval lit mirror, lit side shelves, three drawers and a cushioned stool.</p>
+    <p class="fin"><b>Finish</b> White, champagne</p>
+    <button class="pill" type="button" data-design="DT-03 Classic Arch">Ask about this design</button>
+  </div>
+</article>
+<article class="dcard" id="dt-04">
+  <div class="dpics">
+    <figure><img src="dressing-04-studio.webp" loading="lazy" width="700" height="940" alt="DURSA Lit Frame dressing table, studio view" decoding="async"><figcaption>Studio</figcaption></figure>
+    <figure><img src="dressing-04-home.webp" loading="lazy" width="698" height="452" alt="DURSA Lit Frame dressing table styled in a bedroom" decoding="async"><figcaption>In a bedroom</figcaption></figure>
+  </div>
+  <div class="pbody">
+    <span class="pcode">DT-04</span>
+    <h3>Lit Frame</h3>
+    <p>Large LED-framed mirror, a walnut-trimmed lit shelf tower, fluted cream drawer fronts, gold legs and an upholstered stool.</p>
+    <p class="fin"><b>Finish</b> Cream, walnut, gold</p>
+    <button class="pill" type="button" data-design="DT-04 Lit Frame">Ask about this design</button>
+  </div>
+</article>
+<article class="dcard" id="dt-05">
+  <div class="dpics">
+    <figure><img src="dressing-05-studio.webp" loading="lazy" width="700" height="940" alt="DURSA Grand Vanity dressing table, studio view" decoding="async"><figcaption>Studio</figcaption></figure>
+    <figure><img src="dressing-05-home.webp" loading="lazy" width="698" height="452" alt="DURSA Grand Vanity dressing table styled in a bedroom" decoding="async"><figcaption>In a bedroom</figcaption></figure>
+  </div>
+  <div class="pbody">
+    <span class="pcode">DT-05</span>
+    <h3>Grand Vanity</h3>
+    <p>Tall lit shelf tower, wide LED-framed mirror and fluted panel, with a drawer, a cabinet and a gold-framed stool.</p>
+    <p class="fin"><b>Finish</b> Cream, walnut, gold</p>
+    <button class="pill" type="button" data-design="DT-05 Grand Vanity">Ask about this design</button>
+  </div>
+</article>
+      </div>
+    </div>
+  </section>
+
+  <section class="psec" id="studio-beds" aria-labelledby="h-studio-beds">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">04 · Studio Beds</span><h2 id="h-studio-beds">Studio Beds</h2><hr class="rule"><p>Thirteen beds photographed in the studio, in ivory, grey and gold. Prices on request.</p></div>
+      <div class="pgrid">
+<article class="pcard" id="sb-01">
+  <figure><img src="studio-bed-studio-01.webp" loading="lazy" width="1536" height="1024" alt="DURSA Gold Arch Bed: Ivory quilted bed with a rounded gold-trimmed headboard, lit side panels and a diamond-pattern cover." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SB-01</span>
+    <h3>Gold Arch Bed</h3>
+    <p>Ivory quilted bed with a rounded gold-trimmed headboard, lit side panels and a diamond-pattern cover.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SB-01 Gold Arch Bed">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sb-02">
+  <figure><img src="studio-bed-studio-02.webp" loading="lazy" width="1536" height="1024" alt="DURSA Grey Panel Bed with Blue Light: Taupe panelled headboard with a blue LED V-line, lit side niches, grey base and matching bedside tables." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SB-02</span>
+    <h3>Grey Panel Bed with Blue Light</h3>
+    <p>Taupe panelled headboard with a blue LED V-line, lit side niches, grey base and matching bedside tables.</p>
+    <p class="fin"><b>Finish</b> Taupe, grey, gold</p>
+    <button class="pill" type="button" data-design="SB-02 Grey Panel Bed with Blue Light">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sb-03">
+  <figure><img src="studio-bf-studio-02.webp" loading="lazy" width="1536" height="1024" alt="DURSA Ivory Wall Bed: Ivory bed with a full wall surround, lit gold wall lamps, built-in drawers and a gold-framed base." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SB-03</span>
+    <h3>Ivory Wall Bed</h3>
+    <p>Ivory bed with a full wall surround, lit gold wall lamps, built-in drawers and a gold-framed base.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SB-03 Ivory Wall Bed">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sb-04">
+  <figure><img src="studio-bf-studio-06.webp" loading="lazy" width="1536" height="1024" alt="DURSA Ivory Channel Bed: Channelled ivory headboard with gold trim, round wall lamps and a navy and orange houndstooth throw." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SB-04</span>
+    <h3>Ivory Channel Bed</h3>
+    <p>Channelled ivory headboard with gold trim, round wall lamps and a navy and orange houndstooth throw.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold, navy</p>
+    <button class="pill" type="button" data-design="SB-04 Ivory Channel Bed">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sb-05">
+  <figure><img src="studio-bf-studio-07.webp" loading="lazy" width="1536" height="1024" alt="DURSA Arched Cream Bed: Arched upholstered headboard in cream and soft pink, with mirrored side panels and a gold-banded base." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SB-05</span>
+    <h3>Arched Cream Bed</h3>
+    <p>Arched upholstered headboard in cream and soft pink, with mirrored side panels and a gold-banded base.</p>
+    <p class="fin"><b>Finish</b> Cream, rose, gold</p>
+    <button class="pill" type="button" data-design="SB-05 Arched Cream Bed">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sb-06">
+  <figure><img src="studio-bf-studio-09.webp" loading="lazy" width="1536" height="1024" alt="DURSA Grey Diamond Bed: Grey headboard with gold diamond quilting, lit side shelves and a gold-edged footboard." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SB-06</span>
+    <h3>Grey Diamond Bed</h3>
+    <p>Grey headboard with gold diamond quilting, lit side shelves and a gold-edged footboard.</p>
+    <p class="fin"><b>Finish</b> Grey, gold</p>
+    <button class="pill" type="button" data-design="SB-06 Grey Diamond Bed">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sb-07">
+  <figure><img src="studio-bf-studio-10.webp" loading="lazy" width="1536" height="1024" alt="DURSA Grey Gold-Framed Bed, Front View: Wide grey headboard with a gold frame, quilted centre band and matching grey bedside tables, seen from the front." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SB-07</span>
+    <h3>Grey Gold-Framed Bed, Front View</h3>
+    <p>Wide grey headboard with a gold frame, quilted centre band and matching grey bedside tables, seen from the front.</p>
+    <p class="fin"><b>Finish</b> Grey, gold</p>
+    <button class="pill" type="button" data-design="SB-07 Grey Gold-Framed Bed, Front View">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sb-08">
+  <figure><img src="studio-bf-studio-11.webp" loading="lazy" width="1536" height="1024" alt="DURSA Ivory Houndstooth Bed: Ivory headboard with a mirrored surround and round wall lamps, finished with a navy and orange throw." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SB-08</span>
+    <h3>Ivory Houndstooth Bed</h3>
+    <p>Ivory headboard with a mirrored surround and round wall lamps, finished with a navy and orange throw.</p>
+    <p class="fin"><b>Finish</b> Ivory, navy, gold</p>
+    <button class="pill" type="button" data-design="SB-08 Ivory Houndstooth Bed">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sb-09">
+  <figure><img src="studio-bf-studio-12.webp" loading="lazy" width="1536" height="1024" alt="DURSA Arched Grey and Blue Bed: Arched grey headboard with mirrored side panels, white bedside units and a gold-edged base." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SB-09</span>
+    <h3>Arched Grey and Blue Bed</h3>
+    <p>Arched grey headboard with mirrored side panels, white bedside units and a gold-edged base.</p>
+    <p class="fin"><b>Finish</b> Grey, white, gold</p>
+    <button class="pill" type="button" data-design="SB-09 Arched Grey and Blue Bed">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sb-10">
+  <figure><img src="studio-bf-studio-14.webp" loading="lazy" width="1536" height="1024" alt="DURSA Open Storage Bed Frame: Ivory bed frame with a gold-framed headboard and a lifting storage base, shown without a mattress." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SB-10</span>
+    <h3>Open Storage Bed Frame</h3>
+    <p>Ivory bed frame with a gold-framed headboard and a lifting storage base, shown without a mattress.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SB-10 Open Storage Bed Frame">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sb-11">
+  <figure><img src="studio-bs-studio-01.webp" loading="lazy" width="1536" height="1024" alt="DURSA Ivory Gold Headboard Wall: Ivory headboard wall with gold diamond quilting, lit side niches and matching bedside tables on gold legs." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SB-11</span>
+    <h3>Ivory Gold Headboard Wall</h3>
+    <p>Ivory headboard wall with gold diamond quilting, lit side niches and matching bedside tables on gold legs.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SB-11 Ivory Gold Headboard Wall">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sb-12">
+  <figure><img src="studio-bs-studio-02.webp" loading="lazy" width="1536" height="1024" alt="DURSA Ivory Bed with Navy Bedding: Ivory headboard wall with a quilted gold band, gold-legged bedside tables and navy and ivory bedding." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SB-12</span>
+    <h3>Ivory Bed with Navy Bedding</h3>
+    <p>Ivory headboard wall with a quilted gold band, gold-legged bedside tables and navy and ivory bedding.</p>
+    <p class="fin"><b>Finish</b> Ivory, navy, gold</p>
+    <button class="pill" type="button" data-design="SB-12 Ivory Bed with Navy Bedding">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sb-13">
+  <figure><img src="studio-bs-studio-04.webp" loading="lazy" width="1536" height="1024" alt="DURSA Ivory and Gold Bed: Ivory headboard wall with lit gold side niches, gold bedding and gold-legged bedside tables." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SB-13</span>
+    <h3>Ivory and Gold Bed</h3>
+    <p>Ivory headboard wall with lit gold side niches, gold bedding and gold-legged bedside tables.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SB-13 Ivory and Gold Bed">Ask about this design</button>
+  </div>
+</article>
+      </div>
+    </div>
+  </section>
+
+  <section class="psec alt" id="studio-sets" aria-labelledby="h-studio-sets">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">05 · Studio Bedroom Sets</span><h2 id="h-studio-sets">Studio Bedroom Sets</h2><hr class="rule"><p>Matching bed, wardrobe and vanity sets. Prices on request.</p></div>
+      <div class="pgrid">
+<article class="pcard" id="ss-01">
+  <figure><img src="studio-bed-studio-03.webp" loading="lazy" width="1536" height="1024" alt="DURSA Ivory Gold Bedroom Set: Bed, bedside tables, four-door wardrobe and dressing table with mirror, all in ivory with gold lines." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SS-01</span>
+    <h3>Ivory Gold Bedroom Set</h3>
+    <p>Bed, bedside tables, four-door wardrobe and dressing table with mirror, all in ivory with gold lines.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SS-01 Ivory Gold Bedroom Set">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="ss-02">
+  <figure><img src="studio-bs-studio-05.webp" style="background:#c6bbb6" loading="lazy" width="1312" height="1199" alt="DURSA Grey Wardrobe and Vanity Wall: Floor-to-ceiling grey wardrobe wall with lit display shelves, a lit vanity mirror and a round grey stool." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SS-02</span>
+    <h3>Grey Wardrobe and Vanity Wall</h3>
+    <p>Floor-to-ceiling grey wardrobe wall with lit display shelves, a lit vanity mirror and a round grey stool.</p>
+    <p class="fin"><b>Finish</b> Grey, gold</p>
+    <button class="pill" type="button" data-design="SS-02 Grey Wardrobe and Vanity Wall">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="ss-03">
+  <figure><img src="studio-bs-studio-06.webp" style="background:#70665e" loading="lazy" width="1448" height="1086" alt="DURSA Grey Wardrobe and Vanity Wall, Wide View: The same grey wardrobe and vanity wall from a wider angle, with soft ceiling light along the top." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SS-03</span>
+    <h3>Grey Wardrobe and Vanity Wall, Wide View</h3>
+    <p>The same grey wardrobe and vanity wall from a wider angle, with soft ceiling light along the top.</p>
+    <p class="fin"><b>Finish</b> Grey, gold</p>
+    <button class="pill" type="button" data-design="SS-03 Grey Wardrobe and Vanity Wall, Wide View">Ask about this design</button>
+  </div>
+</article>
+      </div>
+    </div>
+  </section>
+
+  <section class="psec" id="studio-wardrobes" aria-labelledby="h-studio-wardrobes">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">06 · Studio Wardrobes</span><h2 id="h-studio-wardrobes">Studio Wardrobes</h2><hr class="rule"><p>Seven wardrobes with gold trim, mirrors and lit shelves. Prices on request.</p></div>
+      <div class="pgrid">
+<article class="pcard" id="sw-01">
+  <figure><img src="studio-wardrobe-studio-01.webp" loading="lazy" width="1536" height="1024" alt="DURSA Ivory Oval-Handle Wardrobe: Six-door ivory wardrobe with tall gold oval handles and a pair of mirrored centre doors." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SW-01</span>
+    <h3>Ivory Oval-Handle Wardrobe</h3>
+    <p>Six-door ivory wardrobe with tall gold oval handles and a pair of mirrored centre doors.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SW-01 Ivory Oval-Handle Wardrobe">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sw-02">
+  <figure><img src="studio-wardrobe-studio-02.webp" loading="lazy" width="1536" height="1024" alt="DURSA Grey Wardrobe with Blue Light Line: Grey-framed wardrobe with mirrored doors, a blue LED zigzag and lit gold display columns." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SW-02</span>
+    <h3>Grey Wardrobe with Blue Light Line</h3>
+    <p>Grey-framed wardrobe with mirrored doors, a blue LED zigzag and lit gold display columns.</p>
+    <p class="fin"><b>Finish</b> Grey, ivory, gold</p>
+    <button class="pill" type="button" data-design="SW-02 Grey Wardrobe with Blue Light Line">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sw-03">
+  <figure><img src="studio-bf-studio-03.webp" loading="lazy" width="1536" height="1024" alt="DURSA Ivory Quilted Wardrobe: Ivory wardrobe with quilted door panels, a gold V accent and a mirrored centre section." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SW-03</span>
+    <h3>Ivory Quilted Wardrobe</h3>
+    <p>Ivory wardrobe with quilted door panels, a gold V accent and a mirrored centre section.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SW-03 Ivory Quilted Wardrobe">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sw-04">
+  <figure><img src="studio-bf-studio-04.webp" style="background:#000e29" loading="lazy" width="1448" height="1086" alt="DURSA White Gloss Wardrobe with Shelves: High-gloss white wardrobe with gold handles, open lit shelves on one side and drawers below." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SW-04</span>
+    <h3>White Gloss Wardrobe with Shelves</h3>
+    <p>High-gloss white wardrobe with gold handles, open lit shelves on one side and drawers below.</p>
+    <p class="fin"><b>Finish</b> White, gold</p>
+    <button class="pill" type="button" data-design="SW-04 White Gloss Wardrobe with Shelves">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sw-05">
+  <figure><img src="studio-bf-studio-13.webp" loading="lazy" width="1536" height="1024" alt="DURSA Ivory Mirror-Centre Wardrobe: Ivory wardrobe with gold line trim and an arched mirror across the centre doors." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SW-05</span>
+    <h3>Ivory Mirror-Centre Wardrobe</h3>
+    <p>Ivory wardrobe with gold line trim and an arched mirror across the centre doors.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SW-05 Ivory Mirror-Centre Wardrobe">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sw-06">
+  <figure><img src="studio-bf-studio-15.webp" loading="lazy" width="1536" height="1024" alt="DURSA Curved-Panel Wardrobe: Ivory wardrobe with curved gold-edged side panels, mirrored doors and a gold ribbed centre strip." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SW-06</span>
+    <h3>Curved-Panel Wardrobe</h3>
+    <p>Ivory wardrobe with curved gold-edged side panels, mirrored doors and a gold ribbed centre strip.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SW-06 Curved-Panel Wardrobe">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sw-07">
+  <figure><img src="studio-bs-studio-03.webp" style="background:#09101d" loading="lazy" width="1448" height="1086" alt="DURSA White Gloss Wardrobe, Angled View: High-gloss white wardrobe with lit corner shelves and gold handles, shown from an angle." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SW-07</span>
+    <h3>White Gloss Wardrobe, Angled View</h3>
+    <p>High-gloss white wardrobe with lit corner shelves and gold handles, shown from an angle.</p>
+    <p class="fin"><b>Finish</b> White, gold</p>
+    <button class="pill" type="button" data-design="SW-07 White Gloss Wardrobe, Angled View">Ask about this design</button>
+  </div>
+</article>
+      </div>
+    </div>
+  </section>
+
+  <section class="psec alt" id="studio-dressing" aria-labelledby="h-studio-dressing">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">07 · Studio Dressing Tables</span><h2 id="h-studio-dressing">Studio Dressing Tables</h2><hr class="rule"><p>Six vanities with mirrors, lit frames and gold handles. Prices on request.</p></div>
+      <div class="pgrid">
+<article class="pcard" id="sd-01">
+  <figure><img src="studio-dt-studio-01.webp" loading="lazy" width="1536" height="1024" alt="DURSA Ivory Chest with Arch Mirror: Low ivory chest with six drawers and gold handles, topped by a gold arch mirror frame." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SD-01</span>
+    <h3>Ivory Chest with Arch Mirror</h3>
+    <p>Low ivory chest with six drawers and gold handles, topped by a gold arch mirror frame.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SD-01 Ivory Chest with Arch Mirror">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sd-02">
+  <figure><img src="studio-dt-studio-02.webp" style="background:#000f25" loading="lazy" width="1312" height="1199" alt="DURSA Lit Mirror Vanity with Stool: Ivory and grey vanity with an LED mirror, lit side shelves, six drawers and a round upholstered stool." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SD-02</span>
+    <h3>Lit Mirror Vanity with Stool</h3>
+    <p>Ivory and grey vanity with an LED mirror, lit side shelves, six drawers and a round upholstered stool.</p>
+    <p class="fin"><b>Finish</b> Ivory, grey, gold</p>
+    <button class="pill" type="button" data-design="SD-02 Lit Mirror Vanity with Stool">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sd-03">
+  <figure><img src="studio-dt-studio-03.webp" loading="lazy" width="1536" height="1024" alt="DURSA Fan-Back Vanity: Vanity with a quilted fan-shaped back, lit gold wall lamps, a central drawer and a round white stool." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SD-03</span>
+    <h3>Fan-Back Vanity</h3>
+    <p>Vanity with a quilted fan-shaped back, lit gold wall lamps, a central drawer and a round white stool.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SD-03 Fan-Back Vanity">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sd-04">
+  <figure><img src="studio-bf-studio-01.webp" loading="lazy" width="1536" height="1024" alt="DURSA Ivory Arch Vanity: Ivory vanity with an arched double mirror, gold trim and a carved gold detail on the central drawer." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SD-04</span>
+    <h3>Ivory Arch Vanity</h3>
+    <p>Ivory vanity with an arched double mirror, gold trim and a carved gold detail on the central drawer.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SD-04 Ivory Arch Vanity">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sd-05">
+  <figure><img src="studio-bf-studio-05.webp" loading="lazy" width="1536" height="1024" alt="DURSA Grey Vanity with Lit Mirror: Grey and ivory vanity with a wide angled mirror, lit side pillars and gold-framed drawers." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SD-05</span>
+    <h3>Grey Vanity with Lit Mirror</h3>
+    <p>Grey and ivory vanity with a wide angled mirror, lit side pillars and gold-framed drawers.</p>
+    <p class="fin"><b>Finish</b> Grey, ivory, gold</p>
+    <button class="pill" type="button" data-design="SD-05 Grey Vanity with Lit Mirror">Ask about this design</button>
+  </div>
+</article>
+<article class="pcard" id="sd-06">
+  <figure><img src="studio-bf-studio-08.webp" loading="lazy" width="1536" height="1024" alt="DURSA Ivory Vanity with Wide Mirror: Ivory vanity with a wide lit mirror, gold-trimmed drawers and gold ball feet." decoding="async"></figure>
+  <div class="pbody">
+    <span class="pcode">SD-06</span>
+    <h3>Ivory Vanity with Wide Mirror</h3>
+    <p>Ivory vanity with a wide lit mirror, gold-trimmed drawers and gold ball feet.</p>
+    <p class="fin"><b>Finish</b> Ivory, gold</p>
+    <button class="pill" type="button" data-design="SD-06 Ivory Vanity with Wide Mirror">Ask about this design</button>
+  </div>
+</article>
+      </div>
+    </div>
+  </section>
+
+  <section class="psec" id="mirrors" aria-labelledby="h-mir"><div class="wrap">
+    <div class="sec-head"><span class="eyebrow">08 · Mirrors &amp; Dressing Sets</span><h2 id="h-mir">More for the Bedroom</h2><hr class="rule"><p>Standing mirrors and a sage-and-oak dressing set. Prices on request.</p></div>
+<article class="mj" id="bd-m1">
+  <div><figure class="view"><img class="v nat" src="mirrors-arched.webp" loading="lazy" width="1080" height="816" alt="Arched and Standing Mirrors" decoding="async"></figure></div>
+  <div class="pbody"><span class="pcode">BD-M1</span><h3>Arched and Standing Mirrors</h3><p>Full-length arched mirrors in grey, natural wood and black frames, plus an oval standing mirror with a lit edge.</p><p class="fin"><b>Finish</b> Grey, wood, black</p><button class="pill" type="button" data-design="BD-M1 Arched and Standing Mirrors">Ask about this design</button></div>
+</article>
+<article class="mj" id="bd-d1">
+  <div><figure class="view"><img class="v nat" src="dressing-green-01.webp" loading="lazy" width="1080" height="925" alt="Sage and Oak Dressing Table" decoding="async"></figure></div>
+  <div class="pbody"><span class="pcode">BD-D1</span><h3>Sage and Oak Dressing Table</h3><p>Dressing table with a triple mirror, six drawers with gold ring handles and a matching stool, bedside table and tall mirror.</p><p class="fin"><b>Finish</b> Sage green, oak</p><button class="pill" type="button" data-design="BD-D1 Sage and Oak Dressing Table">Ask about this design</button></div>
+</article>
+<article class="mj" id="bd-d2">
+  <div><figure class="view"><img class="v nat" src="dressing-green-02.webp" loading="lazy" width="1080" height="904" alt="Sage and Oak Dressing Set, Side View" decoding="async"></figure></div>
+  <div class="pbody"><span class="pcode">BD-D2</span><h3>Sage and Oak Dressing Set, Side View</h3><p>The same set from the side, with the upholstered sage headboard and a ribbed bedside table.</p><p class="fin"><b>Finish</b> Sage green, oak</p><button class="pill" type="button" data-design="BD-D2 Sage and Oak Dressing Set, Side View">Ask about this design</button></div>
+</article>
+  </div></section>
+
+  <section class="callband" id="contact" aria-labelledby="h-call">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Order or ask</span>
+        <h2 id="h-call" style="margin-top:14px">Call the DURSA <em>team</em></h2>
+        <hr class="rule">
+        <p>Tell us the design code, your room size and the finish you want. Prices are given on request. Showroom: Sigara Tera, NOC Branch, Harar.</p>
+      </div>
+      <div class="numbers">
+        <a class="num" href="tel:+251982828234"><span>Call</span><b>098 282 8234</b></a>
+        <a class="num" href="tel:+251982828234"><span>Call</span><b>098 282 8234</b></a>
+        <a class="num" href="https://t.me/+251982828234" target="_blank" rel="noopener"><span>Telegram</span><b>098 282 8234</b></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="enq" id="enq" role="region" aria-label="Your enquiry" aria-live="polite">
+  <div class="in">
+    <pre id="enq-text"></pre>
+    <div class="row">
+      <button class="pill gold" type="button" id="enq-copy">Copy message</button>
+      <a class="pill gold" href="https://t.me/+251982828234" target="_blank" rel="noopener">Open Telegram</a>
+      <a class="pill gold" href="tel:+251982828234">Call 098 282 8234</a>
+      <button class="x" type="button" id="enq-close" aria-label="Close">&times;</button>
+    </div>
+    <small id="enq-note">Nothing is sent from this page. Paste the message in Telegram, or call us.</small>
+  </div>
+</div>
+
+<section class="mapband" id="find-us" aria-labelledby="h-map"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Our showrooms</span><h2 id="h-map">Find us in Harar</h2><hr class="rule"><p>Choose a branch to see it on the map. Please call to confirm opening hours before visiting.</p></div>
+  <div class="maptabs" role="group" aria-label="Choose branch"><button type="button" data-q="DURSA Arabian Majlis Sigara Tera Harar Ethiopia" aria-pressed="true">Sigara Tera Branch</button><button type="button" data-q="DURSA Arabian Majlis NOC Harar Ethiopia" aria-pressed="false">NOC SOS HG School Branch</button></div>
+  <div class="mapframe"><iframe id="map-frame" title="Map: Sigara Tera Branch" src="https://www.google.com/maps?q=DURSA%20Arabian%20Majlis%20Sigara%20Tera%20Harar%20Ethiopia&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="mapopen"><a class="pill" id="map-open" href="https://www.google.com/maps/search/?api=1&amp;query=DURSA%20Arabian%20Majlis%20Sigara%20Tera%20Harar%20Ethiopia" target="_blank" rel="noopener">Open in Google Maps</a></div>
+</div></section>
+<footer class="sitefoot">
+  <svg class="edge" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true"><path class="fill" d="M0 64V30C220 8 520 24 690 22C705 22 712 10 720 3C728 10 735 22 750 22C920 24 1220 8 1440 30V64Z"/><path class="line" d="M0 30C220 8 520 24 690 22C705 22 712 10 720 3C728 10 735 22 750 22C920 24 1220 8 1440 30"/></svg>
+  <div class="body"><div class="wrap cols">
+    <div class="col brandcol">
+      <div><a href="index.html" aria-label="DURSA Arabian Majlis &amp; Furniture, home"><img class="logo" src="dursa-logo.webp" width="640" height="640" alt="DURSA Arabian Majlis &amp; Furniture" loading="lazy" decoding="async"></a>
+      <p class="foot-tag">Elegant Furniture for Modern Homes &amp; Traditional Majlis</p></div>
+      <div class="socials" aria-label="DURSA on social media">
+        <a href="https://wa.me/251982828234" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></a>
+        <a href="#" data-todo="facebook" aria-label="Facebook"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2z"/></svg></a>
+        <a href="https://www.instagram.com/dursa_arabian_majlis/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.5"/><path d="M16.5 7.5v.01"/></svg></a>
+        <a href="#" data-todo="youtube" aria-label="YouTube"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg></a>
+        <a href="https://www.tiktok.com/@dursa_arabiya_majlis" target="_blank" rel="noopener" aria-label="TikTok"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+        <a href="https://t.me/+251982828234" target="_blank" rel="noopener" aria-label="Telegram"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"/></svg></a>
+      </div>
+    </div>
+    <div class="col"><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1.5"/><rect x="14" y="4" width="6" height="6" rx="1.5"/><rect x="4" y="14" width="6" height="6" rx="1.5"/><rect x="14" y="14" width="6" height="6" rx="1.5"/></svg>Our Collections</h3><ul>
+      <li><a href="living.html#majlis"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3"/><path d="M3 13a2 2 0 0 1 4 0v2h10v-2a2 2 0 0 1 4 0v5H3z"/></svg>Arabian Majlis</a></li>
+      <li><a href="bedroom.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18V7M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="11" r="1.6"/></svg>Bedroom</a></li>
+      <li><a href="bedroom.html#wardrobes"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M12 3v18M9.5 12v2M14.5 12v2"/></svg>Wardrobes</a></li>
+      <li><a href="index.html#dining"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h16M6 9v10M18 9v10M9 9V6h6v3"/></svg>Dining Room</a></li>
+      <li><a href="curtains.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16M6 4c0 6-1 11-2 16h5c0-5 0-10-1-16M18 4c0 6 1 11 2 16h-5c0-5 0-10 1-16"/></svg>Curtains</a></li>
+      <li><a href="curtains.html#rooms"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="6" width="16" height="12" rx="1.5"/><path d="M12 8.5l3 3.5-3 3.5-3-3.5z"/></svg>Carpets</a></li>
+    </ul></div>
+    <div class="col"><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8v.01"/></svg>Quick Links</h3><ul>
+      <li><a href="index.html#gallery">Our Showroom</a></li>
+      <li><a href="index.html#catalogue">Catalogue</a></li>
+      <li><a href="index.html#visit">Visit Us</a></li>
+      <li><a href="#find-us">Our Branches</a></li>
+      <li><a href="index.html#quote">Request a Quote</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul></div>
+    <div class="col"><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.6-6-10.5a6 6 0 0 1 12 0C18 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.2"/></svg>Our Branches</h3><ul class="branchlist">
+      <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.6-6-10.5a6 6 0 0 1 12 0C18 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.2"/></svg><span><b>Sigara Tera Branch</b><small>Harar, Ethiopia</small></span><a class="ext" href="https://www.google.com/maps/search/?api=1&amp;query=DURSA%20Arabian%20Majlis%20Sigara%20Tera%20Harar%20Ethiopia" target="_blank" rel="noopener" aria-label="Sigara Tera Branch on Google Maps"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></li>
+      <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.6-6-10.5a6 6 0 0 1 12 0C18 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.2"/></svg><span><b>NOC SOS HG School Branch</b><small>Harar, Ethiopia</small></span><a class="ext" href="https://www.google.com/maps/search/?api=1&amp;query=DURSA%20Arabian%20Majlis%20NOC%20Harar%20Ethiopia" target="_blank" rel="noopener" aria-label="NOC SOS HG School Branch on Google Maps"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></li>
+    </ul><a class="footmap" href="#find-us"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4L3 6.5v13L9 17l6 3 6-2.5v-13L15 7z"/><path d="M9 4v13M15 7v13"/></svg>View on Google Maps</a></div>
+    <div class="col"><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Get in Touch</h3><ul class="contactlist">
+      <li><a href="tel:+251982828234"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>098 282 8234</a></li>
+      <li><a href="tel:+251982828234"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>098 282 8234</a></li>
+      <li><a href="https://t.me/+251982828234" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"/></svg>098 282 8234</a></li>
+      <li><a href="mailto:dursamajlisfarniture@gmail.com"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>dursamajlisfarniture@gmail.com</a></li>
+    </ul></div>
+  </div></div>
+  <div class="bar"><div class="wrap"><span>&copy; 2026 DURSA Arabian Majlis &amp; Furniture. All rights reserved.</span><nav aria-label="Footer"><a href="index.html">Home</a><a href="contact.html">Contact</a><a href="#top">Back to top &uarr;</a></nav></div></div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menu-btn'),nav=document.getElementById('mobile-nav');
+  function setMenu(o){nav.classList.toggle('open',o);btn.setAttribute('aria-expanded',o?'true':'false');btn.setAttribute('aria-label',o?'Close menu':'Open menu');}
+  btn.addEventListener('click',function(){setMenu(!nav.classList.contains('open'));});
+  nav.addEventListener('click',function(e){if(e.target.closest('a'))setMenu(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('open')){setMenu(false);btn.focus();}});
+  window.matchMedia('(min-width:1101px)').addEventListener('change',function(e){if(e.matches)setMenu(false);});
+  var enq=document.getElementById('enq'),txt=document.getElementById('enq-text'),note=document.getElementById('enq-note'),cur='',enqTrigger=null;
+  document.querySelectorAll('[data-design]').forEach(function(b){
+    b.addEventListener('click',function(){
+      enqTrigger=b;cur='Hello DURSA, I would like a quote.\nDesign: '+b.getAttribute('data-design');
+      txt.textContent=cur;note.textContent='Nothing is sent from this page. Paste the message in Telegram, or call us.';enq.classList.add('open');document.getElementById('enq-copy').focus();
+    });
+  });
+  function closeEnquiry(){enq.classList.remove('open');if(enqTrigger)enqTrigger.focus();}
+  document.getElementById('enq-close').addEventListener('click',closeEnquiry);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&enq.classList.contains('open'))closeEnquiry();});
+  document.getElementById('enq-copy').addEventListener('click',function(){
+    function fb(){var r=document.createRange();r.selectNodeContents(txt);var s=getSelection();s.removeAllRanges();s.addRange(r);note.textContent='Message selected. Press copy on your device, then paste it in Telegram.';}
+    try{navigator.clipboard.writeText(cur).then(function(){note.textContent='Copied. Paste it in Telegram, or call 098 282 8234.';},fb);}catch(e){fb();}
+  });
+})();
+</script>
+<script src="room-gallery.js"></script>
+<script src="footer.js"></script>
+</body>
+</html>

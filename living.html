@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="DURSA Arabian majlis and living room furniture, 19 designs, plus curtains. Harar, Ethiopia. Call 098 282 8234.">
+<meta name="theme-color" content="#05445c">
+<link rel="icon" type="image/png" sizes="32x32" href="dursa-icon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="dursa-icon-180.png">
+<link rel="manifest" href="site.webmanifest">
+<title>Living Room &amp; Arabian Majlis | DURSA</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+/* Layout: ivory showroom pages. Hero = ghost word + product left, copy right. Split rows, full-bleed "At Home" shots, teal footer band. */
+:root{
+  --ivory:#fdfaf3;
+  --ivory-2:#f7f1e4;
+  --ghost:#f1eadb;
+  --teal:#0d4e65;
+  --teal-deep:#05445c;
+  --gold:#cca971;
+  --gold-line:#d4a64e;
+  --ink:#0b3a52;
+  --ink-soft:#3f5f70;
+  --display:"Playfair Display","Didot","Bodoni 72",Georgia,serif;
+  --body:"Jost","Avenir Next","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--body);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1.05;margin:0;text-wrap:balance;color:var(--ink)}
+p{margin:0}
+:focus-visible{outline:2px solid var(--gold-line);outline-offset:3px}
+.wrap{max-width:1240px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.rule{display:block;width:64px;height:2px;background:var(--gold-line);border:0;margin:0}
+.eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;font-weight:500;color:var(--ink-soft)}
+
+/* buttons */
+.pill{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:48px;padding:0 30px;border:1.5px solid var(--teal);border-radius:999px;background:transparent;color:var(--teal);font:500 .95rem/1 var(--body);text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
+.pill:hover{background:var(--teal);color:var(--ivory)}
+.pill.solid{background:var(--teal);color:var(--ivory)}
+.pill.solid:hover{background:var(--teal-deep)}
+.pill.gold{border-color:var(--gold);color:var(--ivory)}
+.pill.gold:hover{background:var(--gold);color:var(--teal-deep)}
+
+
+/* landing */
+.landing{position:relative;background:var(--teal-deep);color:var(--ivory);overflow:hidden}
+.landing picture,.landing img{display:block;width:100%}
+.landing img{height:clamp(600px,90vh,840px);object-fit:cover;object-position:center 48%}
+.landing::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,68,92,0) 42%,rgba(5,68,92,.72) 76%,rgba(5,68,92,.95) 100%)}
+.landing .copy{position:absolute;z-index:2;left:0;right:0;bottom:0}
+.landing .copy .wrap{padding-block:clamp(28px,5vw,64px);display:grid;gap:18px;justify-items:start}
+.landing h1{color:var(--ivory);font-size:clamp(2.4rem,6vw,5rem);max-width:15ch;text-shadow:0 2px 24px rgba(5,68,92,.35)}
+.landing .eyebrow{color:#f6e3bd;text-shadow:0 1px 12px rgba(5,68,92,.8);background:rgba(5,68,92,.55);padding:6px 12px}
+.landing p.lede{max-width:44ch;color:#e6eef1;font-size:clamp(1rem,1.6vw,1.2rem)}
+.landing .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.pill.ivory{background:var(--ivory);border-color:var(--ivory);color:var(--teal-deep)}
+.pill.ivory:hover{background:var(--gold);border-color:var(--gold);color:var(--teal-deep)}
+.pill.ghost{border-color:rgba(253,250,243,.7);color:var(--ivory)}
+.pill.ghost:hover{background:rgba(253,250,243,.14);color:var(--ivory)}
+.facts{background:var(--teal-deep);border-top:1px solid rgba(204,169,113,.35)}
+.facts .wrap{display:flex;flex-wrap:wrap;gap:8px 36px;padding-block:16px;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#cfe0e6;justify-content:center}
+.facts span b{color:var(--gold);font-weight:500;margin-right:.5em}
+@media (max-width:640px){.landing img{height:640px;object-position:center 40%}.landing::after{background:linear-gradient(180deg,rgba(5,68,92,0) 34%,rgba(5,68,92,.78) 66%,rgba(5,68,92,.96) 100%)}.facts .wrap{justify-content:flex-start;gap:6px 24px;font-size:.7rem}}
+
+/* header */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(253,250,243,.94);backdrop-filter:blur(8px);border-bottom:1px solid #e9dfc9}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--ivory)}
+.topbar .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:80px;gap:16px}
+.nav{display:flex;gap:28px;font-size:.9rem;font-weight:500}
+.nav a{text-decoration:none;padding:6px 0;border-bottom:1.5px solid transparent}
+.nav a:hover{border-bottom-color:var(--gold-line)}
+.menu-btn{display:none;width:44px;height:44px;border:0;background:none;color:var(--ink);cursor:pointer;padding:0}
+.menu-btn svg{width:28px;height:28px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:54px;height:54px;border-radius:50%}
+.brand-text{display:flex;flex-direction:column;line-height:1}
+.brand-name{font-family:var(--display);font-weight:700;font-size:2.15rem;letter-spacing:-.01em;color:var(--teal)}
+.brand-tag{font-size:.5rem;letter-spacing:.24em;font-weight:500;color:var(--teal);margin-top:4px;white-space:nowrap}
+.top-actions{display:flex;justify-content:flex-end}
+.top-actions .pill{min-height:42px;padding:0 22px;font-size:.88rem}
+.top-actions .pill svg{display:none}
+.mobile-nav{display:none}
+
+/* hero blocks */
+.hero{position:relative;overflow:hidden;background:var(--ivory)}
+.hero .ghost{position:absolute;left:-.04em;top:.02em;font-family:var(--display);font-weight:700;font-size:clamp(6.5rem,19vw,17rem);line-height:.9;letter-spacing:-.03em;color:var(--ghost);pointer-events:none;user-select:none;white-space:nowrap}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);align-items:center;gap:clamp(16px,4vw,64px);padding-block:clamp(40px,6vw,88px)}
+.hero figure{margin:0}
+.hero figure img{width:100%;mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 91%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 91%,transparent);mask-composite:intersect}
+.hero-copy{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+.hero-copy h1,.hero-copy h2{font-size:clamp(2.4rem,4.6vw,4rem)}
+.hero-copy p{color:var(--ink-soft);max-width:30ch;font-size:1.05rem}
+.swatches{display:flex;align-items:center;gap:12px;font-size:.95rem;color:var(--ink-soft)}
+.sw{width:42px;height:42px;border-radius:50%;border:1px solid #e0d5bd;flex:none}
+.sw.ivory{background:#efe6d6}.sw.teal{background:var(--teal)}.sw.char{background:#34363a}
+.swatch-row{display:flex;flex-direction:column;gap:10px}
+.swatch-row .dots{display:flex;gap:12px}
+
+/* split rows */
+.split{background:var(--ivory)}
+.split .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);align-items:center;gap:clamp(20px,4vw,56px);padding-block:clamp(24px,4vw,56px)}
+.split.flip .wrap{grid-template-columns:minmax(0,2fr) minmax(0,1fr)}
+.split.flip .split-copy{order:2}
+.split-copy{display:flex;flex-direction:column;gap:18px}
+.split-copy h2{font-size:clamp(1.9rem,3.2vw,2.8rem);text-transform:uppercase;letter-spacing:-.01em;line-height:1.02}
+.split-copy p{color:var(--ink-soft);max-width:26ch;font-size:1.05rem}
+.split figure{margin:0;overflow:hidden}
+.split figure img{width:100%;aspect-ratio:16/10;object-fit:cover}
+
+/* at home */
+.athome{position:relative;margin:0}
+.athome img{width:100%;aspect-ratio:16/8;object-fit:cover;object-position:center 60%}
+.athome img.tall-m{aspect-ratio:16/9}
+.tag{position:absolute;top:clamp(16px,3vw,40px);left:0;background:var(--ivory);padding:18px 28px 14px max(24px,env(safe-area-inset-left,0px));font-size:.8rem;letter-spacing:.3em;font-weight:500;text-transform:uppercase;color:var(--ink)}
+.tag::after{content:"";display:block;width:56px;height:2px;background:var(--gold-line);margin:7px auto 0 0}
+
+/* dining tiles */
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:var(--ivory)}
+.tile{position:relative;margin:0}
+.tile img{width:100%;aspect-ratio:5/4;object-fit:cover}
+.tile figcaption{position:absolute;top:0;left:0;padding:22px 26px;font-family:var(--display);font-weight:600;font-size:clamp(1rem,2vw,1.5rem);letter-spacing:.02em;text-transform:uppercase;color:var(--ink);background:linear-gradient(180deg,rgba(253,250,243,.85),rgba(253,250,243,0));width:100%}
+.tile figcaption::before{content:"";display:block;width:52px;height:2px;background:var(--gold-line);margin-bottom:10px}
+
+/* catalogue */
+.catalogue{background:var(--ivory-2);padding-block:clamp(56px,8vw,112px)}
+.sec-head{display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center;margin-bottom:clamp(32px,5vw,64px)}
+.sec-head h2{font-size:clamp(2.2rem,5vw,3.8rem)}
+.sec-head .rule{margin-inline:auto}
+.sec-head p{color:var(--ink-soft);max-width:46ch}
+.item{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:clamp(20px,4vw,56px);align-items:center;padding-block:clamp(24px,3vw,40px);border-top:1px solid #e2d6bb}
+.item:nth-child(even){grid-template-columns:minmax(0,2fr) minmax(0,1fr)}
+.item:nth-child(even) .item-copy{order:2}
+.item-copy{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.code{font-family:var(--display);font-weight:700;font-size:clamp(2.4rem,4vw,3.4rem);line-height:1;color:var(--ink)}
+.item-copy h3{font-family:var(--body);font-weight:400;font-size:1.25rem;letter-spacing:0;color:var(--ink-soft)}
+.item figure{margin:0}
+.item figure img{width:100%;mix-blend-mode:multiply}
+
+/* bedroom */
+.bedroom{background:var(--ivory);padding-block:clamp(56px,8vw,112px)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,40px)}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,3vw,40px) clamp(16px,2.4vw,32px)}
+@media (max-width:980px){.grid3{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.grid3{grid-template-columns:1fr}}
+.card .img img{aspect-ratio:4/3}
+.card.cut .img{background:var(--ivory-2)}
+.card.cut img{mix-blend-mode:multiply;object-fit:contain;aspect-ratio:4/3}
+.more-head{margin:clamp(40px,6vw,72px) 0 28px;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.more-head h3{font-size:clamp(1.6rem,3vw,2.2rem)}
+.curtains{background:var(--ivory);padding-block:clamp(56px,8vw,112px)}
+.cfeature{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,5vw,72px);align-items:center;max-width:980px;margin-inline:auto}
+.cfeature figure{margin:0}
+.cfeature img{width:100%;box-shadow:0 18px 40px rgba(5,68,92,.14)}
+.cfeature-copy{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.cfeature-copy h3{font-size:clamp(1.8rem,3vw,2.6rem)}
+.cfeature-copy p{color:var(--ink-soft);max-width:40ch}
+.cfeature-copy .fine{font-size:.9rem}
+@media (max-width:760px){.cfeature{grid-template-columns:1fr}.cfeature figure{max-width:460px}}
+.gallery{background:var(--ivory-2);padding-block:clamp(56px,8vw,112px)}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;gap:clamp(8px,1.4vw,16px)}
+.mosaic figure{margin:0;position:relative;overflow:hidden}
+.mosaic figure.wide{grid-column:1/-1}
+.mosaic img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover}
+.mosaic figure.wide img{aspect-ratio:16/8}
+.mosaic figcaption{position:absolute;left:0;bottom:0;padding:12px 18px;background:rgba(253,250,243,.92);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--ink)}
+@media (max-width:640px){.mosaic{grid-template-columns:1fr}.mosaic figure.wide img{aspect-ratio:4/3}}
+.card{margin:0;display:flex;flex-direction:column;gap:18px}
+.card .img{background:#fff;border:1px solid #eadfc7;display:grid;place-items:center;overflow:hidden}
+.card img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.card h3{font-size:1.6rem}
+.card p{color:var(--ink-soft);max-width:38ch}
+
+/* quote / footer */
+.quote{background:var(--teal-deep);color:var(--ivory);padding-block:clamp(56px,8vw,112px)}
+.quote .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px)}
+.quote h2{color:var(--ivory);font-size:clamp(2.2rem,4.6vw,3.6rem)}
+.quote h2 em{font-style:italic;font-weight:500;color:var(--gold)}
+.quote .lead{margin-top:22px;color:#cfdbe0;max-width:40ch}
+.quote .rule{margin-top:26px}
+.details{margin-top:36px;display:grid;gap:0;border-top:1px solid rgba(204,169,113,.4)}
+.details div{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(204,169,113,.4);align-items:baseline}
+.details dt{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.details dd{margin:0;overflow-wrap:anywhere}
+.details small{display:block;color:#b9cad1;font-size:.82rem}
+.details a{text-decoration:none;border-bottom:1px solid rgba(204,169,113,.5)}
+form{display:grid;gap:16px;align-content:start}
+label{display:grid;gap:6px;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+input,select,textarea{width:100%;font:400 1rem/1.4 var(--body);padding:13px 14px;border-radius:10px;border:1px solid rgba(204,169,113,.55);background:rgba(255,255,255,.06);color:var(--ivory);letter-spacing:0;text-transform:none}
+select option{color:#0b3a52}
+input::placeholder,textarea::placeholder{color:#8fa9b4}
+textarea{min-height:110px;resize:vertical}
+.msg{display:grid;gap:12px;padding:18px;border:1px solid var(--gold);border-radius:12px;background:rgba(255,255,255,.06)}
+.msg pre{margin:0;white-space:pre-wrap;font:400 .95rem/1.5 var(--body);color:var(--ivory)}
+.msg .row{display:flex;flex-wrap:wrap;gap:10px}
+.msg .pill{min-height:42px;padding:0 20px;font-size:.88rem}
+.msg p{font-size:.85rem;color:#b9cad1}
+
+.bandfoot{background:var(--teal);border-top:1px solid rgba(204,169,113,.35);color:var(--ivory)}
+.bandfoot .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-block:28px}
+.brand.light .brand-name,.brand.light .brand-tag{color:var(--ivory)}
+.bandfoot small{font-size:.8rem;color:#c5d6dc}
+
+@media (max-width:900px){
+  .topbar .wrap{grid-template-columns:44px 1fr 44px;min-height:72px}
+  .nav,.top-actions .pill span{display:none}
+  .menu-btn{display:block}
+  .top-actions .pill{min-height:44px;width:44px;padding:0;border-radius:50%}
+  .top-actions .pill svg{display:block}
+  .brand{justify-content:center}
+  .brand img{width:46px;height:46px}
+  .brand-name{font-size:1.8rem}
+  .brand-tag{font-size:.42rem}
+  .mobile-nav{display:none;flex-direction:column;background:var(--ivory);border-top:1px solid #e9dfc9}
+  .mobile-nav.open{display:flex}
+  .mobile-nav a{padding:16px max(16px,env(safe-area-inset-left,0px));text-decoration:none;font-weight:500;border-bottom:1px solid #eee4cf}
+  .hero .wrap,.split .wrap,.split.flip .wrap{grid-template-columns:1fr}
+  .hero .wrap{gap:8px}
+  .hero-copy{align-items:flex-start;padding-top:8px}
+  .hero-copy p{max-width:36ch}
+  .split.flip .split-copy{order:0}
+  .item,.item:nth-child(even){grid-template-columns:1fr}
+  .item:nth-child(even) .item-copy{order:0}
+  .quote .wrap{grid-template-columns:1fr}
+  .athome img{aspect-ratio:4/3}
+  .athome img.tall-m{aspect-ratio:9/16;max-height:90vh}
+}
+@media (max-width:640px){
+  .tiles,.pair{grid-template-columns:1fr}
+  .tile img{aspect-ratio:4/3}
+  .details div{grid-template-columns:1fr;gap:4px}
+  .hero .ghost{font-size:30vw}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* bedroom page */
+.phero{background:var(--ivory-2);position:relative;overflow:hidden}
+.phero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center;padding-block:clamp(40px,6vw,88px)}
+.phero h1{font-size:clamp(2.6rem,5.4vw,4.6rem)}
+.phero .lede{color:var(--ink-soft);max-width:44ch;font-size:1.1rem}
+.phero-copy{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+.phero .cta{display:flex;flex-wrap:wrap;gap:12px}
+.phero .mosaic3{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.phero .mosaic3 figure{margin:0;background:#fff;border:1px solid #eadfc7;overflow:hidden}
+.phero .mosaic3 figure:first-child{grid-column:1/-1}
+.phero .mosaic3 img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2}
+.phero .mosaic3 figure:not(:first-child) img{aspect-ratio:4/3}
+.phero .mosaic3 figure:nth-child(3) img{object-fit:contain;padding:6px}
+.catnav{position:sticky;top:80px;z-index:15;background:rgba(253,250,243,.96);backdrop-filter:blur(8px);border-bottom:1px solid #e9dfc9}
+.catnav .wrap{display:flex;gap:8px;overflow-x:auto;padding-block:10px;scrollbar-width:none}
+.catnav a{flex:none;text-decoration:none;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:10px 18px;border:1px solid #e2d6bb;border-radius:999px;color:var(--ink)}
+.catnav a:hover{background:var(--teal);color:var(--ivory);border-color:var(--teal)}
+.catnav a small{color:var(--ink-soft);letter-spacing:.04em;margin-left:.5em}
+.catnav a:hover small{color:#cfe0e6}
+.psec{padding-block:clamp(48px,7vw,96px)}
+.psec.alt{background:var(--ivory-2)}
+.pgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,40px)}
+.pcard,.dcard{display:flex;flex-direction:column;background:var(--ivory);border:1px solid #eadfc7}
+.psec.alt .pcard,.psec.alt .dcard{background:var(--ivory)}
+.pcard figure{margin:0;background:#fff;border-bottom:1px solid #eadfc7}
+.pcard img{width:100%;aspect-ratio:3/2;object-fit:contain;background:#fff}
+.pbody{display:flex;flex-direction:column;gap:10px;align-items:flex-start;padding:clamp(18px,2.4vw,28px)}
+.pcode{font-size:.72rem;letter-spacing:.24em;font-weight:500;color:var(--gold-line)}
+.pbody h3{font-size:clamp(1.5rem,2.4vw,1.9rem)}
+.pbody p{color:var(--ink-soft);max-width:52ch}
+.pbody .fin{font-size:.9rem}
+.pbody .fin b{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);font-weight:500;margin-right:.8em}
+.pbody .pill{margin-top:8px;min-height:44px;padding:0 24px;font-size:.9rem}
+.dgrid{display:grid;gap:clamp(20px,3vw,40px)}
+.dcard{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}
+.dpics{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1px;background:#eadfc7;border-right:1px solid #eadfc7}
+.dpics figure{margin:0;position:relative;background:#fff}
+.dpics img{width:100%;height:100%;object-fit:cover}
+.dpics figure:first-child img{object-fit:contain}
+.dpics figcaption{position:absolute;left:0;bottom:0;padding:6px 12px;background:rgba(253,250,243,.92);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500}
+.dcard .pbody{justify-content:center}
+.callband{background:var(--teal-deep);color:var(--ivory);padding-block:clamp(48px,7vw,88px)}
+.callband .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center}
+.callband h2{color:var(--ivory);font-size:clamp(2rem,4vw,3.2rem)}
+.callband h2 em{font-style:italic;color:var(--gold);font-weight:500}
+.callband p{color:#cfdbe0;max-width:44ch;margin-top:16px}
+.callband .rule{margin-top:22px}
+.numbers{display:grid;gap:12px}
+.num{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;border:1px solid rgba(204,169,113,.55);border-radius:12px;text-decoration:none;background:rgba(255,255,255,.05)}
+.num:hover{background:rgba(204,169,113,.18)}
+.num span{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.num b{font-family:var(--display);font-size:clamp(1.4rem,3vw,1.9rem);font-weight:600;letter-spacing:.01em;white-space:nowrap}
+.enq{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--teal-deep);color:var(--ivory);border-top:2px solid var(--gold-line);padding:14px max(16px,env(safe-area-inset-left,0px)) calc(14px + env(safe-area-inset-bottom,0px));transform:translateY(110%);visibility:hidden;transition:transform .25s,visibility .25s}
+.enq.open{transform:none;visibility:visible}
+.enq .in{max-width:1240px;margin-inline:auto;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+.enq pre{margin:0;flex:1 1 280px;white-space:pre-wrap;font:400 .95rem/1.5 var(--body)}
+.enq .row{display:flex;flex-wrap:wrap;gap:8px}
+.enq .pill{min-height:42px;padding:0 18px;font-size:.88rem}
+.enq .x{background:none;border:0;color:var(--ivory);font-size:1.6rem;line-height:1;cursor:pointer;width:40px;height:40px}
+.enq small{flex-basis:100%;color:#b9cad1;font-size:.8rem}
+@media (max-width:900px){
+  .phero .wrap,.callband .wrap{grid-template-columns:1fr}
+  .catnav{top:72px}
+  .dcard{grid-template-columns:1fr}
+  .dpics{border-right:0;border-bottom:1px solid #eadfc7}
+}
+@media (max-width:640px){
+  .pgrid{grid-template-columns:1fr}
+  .num{flex-direction:column;align-items:flex-start;gap:4px}
+}
+</style>
+<style>.lrow{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:center;padding-block:clamp(20px,3vw,36px)}
+.lrow.flip{grid-template-columns:minmax(0,1fr) minmax(0,1.5fr)}.lrow.flip .pbody{order:-1}
+.lrow figure{margin:0;border:1px solid #eadfc7;background:#fff;overflow:hidden}.lrow img{width:100%;object-fit:cover}
+.lrow .pbody{padding:0}
+.swr{display:flex;align-items:center;gap:10px;color:var(--ink-soft);font-size:.95rem}
+@media (max-width:900px){.lrow[style]{grid-template-columns:1fr!important}}.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,3vw,32px);margin-top:8px}
+.steps div{border-top:2px solid var(--gold-line);padding-top:14px}.steps b{font-family:var(--display);font-size:1.6rem;color:var(--gold-line)}.steps h3{font-size:1.25rem;margin:6px 0}.steps p{color:var(--ink-soft)}
+@media (max-width:900px){.lrow,.lrow.flip{grid-template-columns:1fr}.lrow.flip .pbody{order:0}.steps{grid-template-columns:1fr}}</style>
+<style>
+.mj{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:center;padding-block:clamp(24px,3.5vw,44px);border-top:1px solid #e2d6bb}
+.mj:nth-child(even){grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)}.mj:nth-child(even) .pbody{order:-1}
+.mj .view{margin:0;position:relative;border:1px solid #eadfc7;background:#fff;overflow:hidden}
+[hidden]{display:none!important}.mj .view img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.mj .view img.studio{object-fit:contain;background:#fff}
+.tabs{display:flex;gap:8px;margin-top:10px}
+.tabs button{flex:1;min-height:44px;border:1px solid #e2d6bb;background:transparent;border-radius:999px;font:500 .78rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--teal);color:var(--ivory);border-color:var(--teal)}
+.mj .pbody{padding:0}
+@media (max-width:900px){.mj,.mj:nth-child(even){grid-template-columns:1fr}.mj:nth-child(even) .pbody{order:0}}
+</style>
+<link rel="stylesheet" href="site-fixes.css">
+<link rel="stylesheet" href="typography.css">
+<link rel="stylesheet" href="footer.css">
+</head>
+<body>
+<a class="skip-link" href="#top">Skip to content</a>
+<header class="topbar">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main"><a href="living.html#majlis">Majlis</a><a href="living.html" aria-current="page" style="border-bottom-color:var(--gold-line)">Living</a><a href="index.html#dining">Dining</a><a href="office.html">Office</a><a href="curtains.html">Curtains</a><a href="index.html#catalogue">Catalogue</a><a href="bedroom.html">Bedroom</a><a href="contact.html">Contact</a></nav>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a class="brand" href="index.html" aria-label="DURSA Arabian Majlis &amp; Furniture, home">
+      <img class="brand-logo" src="dursa-logo.webp" width="640" height="640" alt="DURSA Arabian Majlis &amp; Furniture" decoding="async">
+      <span class="brand-words"><b>DURSA</b><i>Arabian Majlis &amp; Furniture</i><u aria-hidden="true"></u></span>
+    </a>
+    <div class="top-actions">
+      <a class="pill" href="tel:+251982828234" aria-label="Call 098 282 8234"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span>Call 098 282 8234</span></a>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile"><a href="living.html#majlis">Majlis</a><a href="living.html" aria-current="page" style="border-bottom-color:var(--gold-line)">Living</a><a href="index.html#dining">Dining</a><a href="office.html">Office</a><a href="curtains.html">Curtains</a><a href="index.html#catalogue">Catalogue</a><a href="bedroom.html">Bedroom</a><a href="contact.html">Contact</a><a href="index.html#gallery">Gallery</a><a href="index.html#visit">Visit</a><a href="#contact">Call us</a></nav>
+</header>
+
+<main id="top" tabindex="-1">
+  <section class="phero" aria-labelledby="h-l"><div class="wrap">
+    <div class="phero-copy"><span class="eyebrow">Living Room &amp; Arabian Majlis</span><h1 id="h-l">Arabian Majlis &amp; Living Room</h1><hr class="rule">
+      <p class="lede">Nineteen majlis designs, each shown in the studio, in our showroom or at home. Pick a design, then tell us your room size.</p>
+      <div class="cta"><a class="pill solid" href="#majlis">See the 19 designs</a><a class="pill" href="#curtains">Curtains</a></div></div>
+    <div class="mosaic3">
+      <figure><img src="majlis-01-home.webp" alt="Navy and ivory lattice majlis in a living room"></figure>
+      <figure><img src="majlis-08-home.webp" alt="Ivory and teal majlis hall"></figure>
+      <figure><img src="majlis-05-showroom.webp" alt="Charcoal, ivory and gold majlis in the DURSA showroom"></figure>
+    </div></div></section>
+  <nav class="catnav" aria-label="Sections"><div class="wrap"><a href="#majlis">Majlis<small>19</small></a><a href="curtains.html">Curtains</a><a href="#sofas">Sofa sets<small>4</small></a><a href="#order">How to order</a><a href="#contact">Contact</a></div></nav>
+  <section class="psec" id="majlis" aria-labelledby="h-m"><div class="wrap">
+    <div class="sec-head"><span class="eyebrow">01 · Arabian Majlis</span><h2 id="h-m">The Majlis Collection</h2><hr class="rule"><p>Explore Studio, Showroom and At home views where available. Some designs include original photographs instead. Prices on request.</p></div>
+<article class="mj" id="mj-01">
+  <div><figure class="view" data-views>
+    <img class="v studio" src="majlis-01-studio.webp" loading="lazy" width="1200" height="900" alt="DURSA Navy Ivory Lattice majlis, studio view" decoding="async">
+    <img class="v" src="majlis-01-showroom.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Navy Ivory Lattice majlis in the showroom" decoding="async">
+    <img class="v" src="majlis-01-home.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Navy Ivory Lattice majlis in a home" decoding="async">
+  </figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Showroom</button><button type="button" aria-pressed="false">At home</button></div></div>
+  <div class="pbody"><span class="pcode">MJ-01</span><h3>Navy Ivory Lattice</h3><p>Navy upholstered seating with patterned bolsters and round end cushions, set in an ivory carved-lattice frame. Shown with a round dark-top coffee table.</p><p class="fin"><b>Finish</b> Navy, ivory</p><button class="pill" type="button" data-design="MJ-01 Navy Ivory Lattice">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-02">
+  <div><figure class="view" data-views>
+    <img class="v studio" src="majlis-02-studio.webp" loading="lazy" width="1200" height="900" alt="DURSA Ivory Gold Lattice majlis, studio view" decoding="async">
+    <img class="v" src="majlis-02-showroom.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Ivory Gold Lattice majlis in the showroom" decoding="async">
+    <img class="v" src="majlis-02-home.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Ivory Gold Lattice majlis in a home" decoding="async">
+  </figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Showroom</button><button type="button" aria-pressed="false">At home</button></div></div>
+  <div class="pbody"><span class="pcode">MJ-02</span><h3>Ivory Gold Lattice</h3><p>Wide ivory U-shaped seating with floral cushions, framed in walnut and gold lattice panels. Shown with a round walnut centre table.</p><p class="fin"><b>Finish</b> Ivory, walnut, gold</p><button class="pill" type="button" data-design="MJ-02 Ivory Gold Lattice">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-03">
+  <div><figure class="view" data-views>
+    <img class="v studio" src="majlis-03-studio.webp" loading="lazy" width="1200" height="900" alt="DURSA Slate Blue Gold Tassels majlis, studio view" decoding="async">
+    <img class="v" src="majlis-03-showroom.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Slate Blue Gold Tassels majlis in the showroom" decoding="async">
+    <img class="v" src="majlis-03-home.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Slate Blue Gold Tassels majlis in a home" decoding="async">
+  </figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Showroom</button><button type="button" aria-pressed="false">At home</button></div></div>
+  <div class="pbody"><span class="pcode">MJ-03</span><h3>Slate Blue Gold Tassels</h3><p>Deep slate-blue tufted U-shaped majlis with gold tassels and gold legs, with a round tufted table in the centre.</p><p class="fin"><b>Finish</b> Slate blue, gold</p><button class="pill" type="button" data-design="MJ-03 Slate Blue Gold Tassels">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-04">
+  <div><figure class="view" data-views>
+    <img class="v studio" src="majlis-04-studio.webp" loading="lazy" width="1200" height="900" alt="DURSA Ivory Walnut Lattice majlis, studio view" decoding="async">
+    <img class="v" src="majlis-04-showroom.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Ivory Walnut Lattice majlis in the showroom" decoding="async">
+    <img class="v" src="majlis-04-home.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Ivory Walnut Lattice majlis in a home" decoding="async">
+  </figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Showroom</button><button type="button" aria-pressed="false">At home</button></div></div>
+  <div class="pbody"><span class="pcode">MJ-04</span><h3>Ivory Walnut Lattice</h3><p>Ivory seating with walnut lattice side tables built into the armrests, and a square glass-top table on a carved walnut base.</p><p class="fin"><b>Finish</b> Ivory, walnut</p><button class="pill" type="button" data-design="MJ-04 Ivory Walnut Lattice">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-05">
+  <div><figure class="view" data-views>
+    <img class="v studio" src="majlis-05-studio.webp" loading="lazy" width="1200" height="900" alt="DURSA Charcoal Ivory Gold majlis, studio view" decoding="async">
+    <img class="v" src="majlis-05-showroom.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Charcoal Ivory Gold majlis in the showroom" decoding="async">
+    <img class="v" src="majlis-05-home.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Charcoal Ivory Gold majlis in a home" decoding="async">
+  </figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Showroom</button><button type="button" aria-pressed="false">At home</button></div></div>
+  <div class="pbody"><span class="pcode">MJ-05</span><h3>Charcoal Ivory Gold</h3><p>Charcoal channelled seating on an ivory base with gold diamond details and gold feet. Shown with a marble-top table.</p><p class="fin"><b>Finish</b> Charcoal, ivory, gold</p><button class="pill" type="button" data-design="MJ-05 Charcoal Ivory Gold">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-06">
+  <div><figure class="view" data-views>
+    <img class="v studio" src="majlis-06-studio.webp" loading="lazy" width="1200" height="900" alt="DURSA Grey Illuminated majlis, studio view" decoding="async">
+    <img class="v" src="majlis-06-showroom.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Grey Illuminated majlis in the showroom" decoding="async">
+    <img class="v" src="majlis-06-home.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Grey Illuminated majlis in a home" decoding="async">
+  </figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Showroom</button><button type="button" aria-pressed="false">At home</button></div></div>
+  <div class="pbody"><span class="pcode">MJ-06</span><h3>Grey Illuminated</h3><p>Grey seating with ivory piping and a warm gold under-light along the base, finished with a gold lattice trim.</p><p class="fin"><b>Finish</b> Grey, ivory, gold</p><button class="pill" type="button" data-design="MJ-06 Grey Illuminated">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-07">
+  <div><figure class="view" data-views>
+    <img class="v studio" src="majlis-07-studio.webp" loading="lazy" width="1200" height="900" alt="DURSA Blue Grey Tufted Gold majlis, studio view" decoding="async">
+    <img class="v" src="majlis-07-showroom.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Blue Grey Tufted Gold majlis in the showroom" decoding="async">
+    <img class="v" src="majlis-07-home.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Blue Grey Tufted Gold majlis in a home" decoding="async">
+  </figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Showroom</button><button type="button" aria-pressed="false">At home</button></div></div>
+  <div class="pbody"><span class="pcode">MJ-07</span><h3>Blue Grey Tufted Gold</h3><p>Blue-grey button-tufted U-shaped majlis with rolled arms and gold legs, with a matching tufted ottoman table.</p><p class="fin"><b>Finish</b> Blue-grey, gold</p><button class="pill" type="button" data-design="MJ-07 Blue Grey Tufted Gold">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-08">
+  <div><figure class="view" data-views>
+    <img class="v studio" src="majlis-08-studio.webp" loading="lazy" width="1200" height="900" alt="DURSA Ivory Teal majlis, studio view" decoding="async">
+    <img class="v" src="majlis-08-showroom.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Ivory Teal majlis in the showroom" decoding="async">
+    <img class="v" src="majlis-08-home.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Ivory Teal majlis in a home" decoding="async">
+  </figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Showroom</button><button type="button" aria-pressed="false">At home</button></div></div>
+  <div class="pbody"><span class="pcode">MJ-08</span><h3>Ivory Teal</h3><p>Low ivory seating with teal bolsters and diamond-quilted cushions, laid out around a patterned rug.</p><p class="fin"><b>Finish</b> Ivory, teal</p><button class="pill" type="button" data-design="MJ-08 Ivory Teal">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-09">
+  <div><figure class="view" data-views>
+    <img class="v studio" src="majlis-09-studio.webp" loading="lazy" width="1200" height="900" alt="DURSA Beige Gold Greek Key majlis, studio view" decoding="async">
+    <img class="v" src="majlis-09-showroom.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Beige Gold Greek Key majlis in the showroom" decoding="async">
+    <img class="v" src="majlis-09-home.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Beige Gold Greek Key majlis in a home" decoding="async">
+  </figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Showroom</button><button type="button" aria-pressed="false">At home</button></div></div>
+  <div class="pbody"><span class="pcode">MJ-09</span><h3>Beige Gold Greek Key</h3><p>Beige channelled corner majlis with a gold Greek-key band, gold legs and built-in side trays.</p><p class="fin"><b>Finish</b> Beige, gold</p><button class="pill" type="button" data-design="MJ-09 Beige Gold Greek Key">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-10">
+  <div><figure class="view" data-views>
+    <img class="v studio" src="majlis-10-studio.webp" loading="lazy" width="1200" height="900" alt="DURSA Ivory Teal Double Base majlis, studio view" decoding="async">
+    <img class="v" src="majlis-10-showroom.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Ivory Teal Double Base majlis in the showroom" decoding="async">
+    <img class="v" src="majlis-10-home.webp" loading="lazy" hidden width="1200" height="900" alt="DURSA Ivory Teal Double Base majlis in a home" decoding="async">
+  </figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Showroom</button><button type="button" aria-pressed="false">At home</button></div></div>
+  <div class="pbody"><span class="pcode">MJ-10</span><h3>Ivory Teal Double Base</h3><p>Wide low ivory seating with a teal double-line base and teal bolsters, made for a large majlis hall.</p><p class="fin"><b>Finish</b> Ivory, teal</p><button class="pill" type="button" data-design="MJ-10 Ivory Teal Double Base">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-11">
+  <div><figure class="view" data-views>
+    <img class="v" src="majlis-11-home.webp" loading="lazy" width="1448" height="1086" alt="DURSA Royal Blue Ivory Niche majlis at home with lit wall niches" decoding="async">
+    <img class="v" src="majlis-11-showroom.webp" loading="lazy" hidden width="1448" height="1086" alt="DURSA Royal Blue Ivory Niche majlis in the showroom under the lit DURSA sign" decoding="async">
+  </figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">At home</button><button type="button" aria-pressed="false">Showroom</button></div></div>
+  <div class="pbody"><span class="pcode">MJ-11</span><h3>Royal Blue Ivory Niche</h3><p>Ivory and royal blue seating with diamond-panelled backs, blue velvet cushions and carved side bases, set under a lit ceiling with stepped wall niches. Shown with a white and blue square-stool table set on a blue medallion rug.</p><p class="fin"><b>Finish</b> Royal blue, ivory, gold</p><button class="pill" type="button" data-design="MJ-11 Royal Blue Ivory Niche">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-12">
+  <div><figure class="view" data-views>
+    <img class="v" src="majlis-12-home.webp" loading="lazy" width="1448" height="1086" alt="DURSA Ivory Teal Embroidered majlis hall at home with teal curtains" decoding="async">
+    <img class="v" src="majlis-12-showroom.webp" loading="lazy" hidden width="1448" height="1086" alt="DURSA Ivory Teal Embroidered majlis in the showroom under the lit DURSA sign" decoding="async">
+  </figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">At home</button><button type="button" aria-pressed="false">Showroom</button></div></div>
+  <div class="pbody"><span class="pcode">MJ-12</span><h3>Ivory Teal Embroidered</h3><p>Deep-tufted ivory seating with a teal base, embroidered medallion cushions and striped bolsters, finished with teal and cream curtains and a matching cream and teal rug.</p><p class="fin"><b>Finish</b> Ivory, teal, gold</p><button class="pill" type="button" data-design="MJ-12 Ivory Teal Embroidered">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-13">
+  <div><figure class="view" data-views>
+    <img class="v" src="majlis-13-home.webp" loading="lazy" width="1448" height="1086" alt="DURSA Grey Damask Carved majlis at home with matching grey curtains" decoding="async">
+  </figure></div>
+  <div class="pbody"><span class="pcode">MJ-13</span><h3>Grey Damask Carved</h3><p>Long grey damask seating with silver carved panels along the base and back rail, square box cushions and a mirror-top table set, with grey damask curtains to match.</p><p class="fin"><b>Finish</b> Grey, silver</p><button class="pill" type="button" data-design="MJ-13 Grey Damask Carved">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-14">
+<div><figure class="view" data-views><img class="v" src="dursa-mj-014-studio.webp" loading="lazy" width="1448" height="1086" alt="DURSA MJ-14 — Studio" decoding="async"><img class="v" src="dursa-mj-014-showroom.webp" loading="lazy" width="1536" height="1024" alt="DURSA MJ-14 — Showroom" decoding="async" hidden><img class="v" src="dursa-mj-014-home.webp" loading="lazy" width="1448" height="1086" alt="DURSA MJ-14 — At home" decoding="async" hidden></figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Showroom</button><button type="button" aria-pressed="false">At home</button></div></div>
+<div class="pbody"><span class="pcode">MJ-14</span><h3>Navy Lattice Gold Majlis</h3><p>Navy lattice-pattern seating with a floral tapestry panel, framed in gold-toned wood with carved bronze plaques and a glass-top coffee table.</p><p class="fin"><b>Finish</b> Navy, gold</p><button class="pill" type="button" data-design="MJ-14 Navy Lattice Gold Majlis">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-15">
+<div><figure class="view" data-views><img class="v" src="dursa-mj-015-studio.webp" loading="lazy" width="1600" height="800" alt="DURSA MJ-15 — Studio" decoding="async"><img class="v" src="dursa-mj-015-showroom.webp" loading="lazy" width="1600" height="900" alt="DURSA MJ-15 — Showroom" decoding="async" hidden><img class="v" src="dursa-mj-015-home.webp" loading="lazy" width="1600" height="900" alt="DURSA MJ-15 — At home" decoding="async" hidden></figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Showroom</button><button type="button" aria-pressed="false">At home</button></div></div>
+<div class="pbody"><span class="pcode">MJ-15</span><h3>Taupe Carved Majlis</h3><p>Taupe seating with cream damask upholstery, carved ivory-inlay panels on the base and back rail, and a glass-top coffee table.</p><p class="fin"><b>Finish</b> Taupe, ivory</p><button class="pill" type="button" data-design="MJ-15 Taupe Carved Majlis">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-16">
+  <div><figure class="view" data-views>
+    <img class="v" src="mj16.webp" loading="lazy" width="1079" height="607" alt="DURSA Sage Green Carved Majlis in the showroom" decoding="async">
+  </figure></div>
+  <div class="pbody"><span class="pcode">MJ-16</span><h3>Sage Green Carved Majlis</h3><p>U-shaped sage damask majlis with natural wood frames, white geometric carved panels and a glass-top table with matching side tables.</p><p class="fin"><b>Finish</b> Sage green, natural wood</p><button class="pill" type="button" data-design="MJ-16 Sage Green Carved Majlis">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-17">
+<div><figure class="view" data-views><img class="v" src="dursa-mj-017-studio.webp" loading="lazy" width="1536" height="1024" alt="DURSA MJ-17 — Studio" decoding="async"><img class="v" src="mj17-a.webp" loading="lazy" width="1200" height="593" alt="DURSA MJ-17 — Original wide view" decoding="async" hidden><img class="v" src="mj17-b.webp" loading="lazy" width="1200" height="593" alt="DURSA MJ-17 — Original detail" decoding="async" hidden></figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Original wide view</button><button type="button" aria-pressed="false">Original detail</button></div></div>
+<div class="pbody"><span class="pcode">MJ-17</span><h3>Gold and Grey Carved Majlis</h3><p>Golden wood frames with dark carved panels, grey-blue damask cushions and an octagonal glass-top coffee table with carved base.</p><p class="fin"><b>Finish</b> Gold, grey, bronze</p><button class="pill" type="button" data-design="MJ-17 Gold and Grey Carved Majlis">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-18">
+<div><figure class="view" data-views><img class="v" src="dursa-mj-018-studio.webp" loading="lazy" width="1600" height="800" alt="DURSA MJ-18 — Studio" decoding="async"><img class="v" src="dursa-mj-018-showroom.webp" loading="lazy" width="1600" height="900" alt="DURSA MJ-18 — Showroom" decoding="async" hidden><img class="v" src="dursa-mj-018-home.webp" loading="lazy" width="1600" height="900" alt="DURSA MJ-18 — At home" decoding="async" hidden></figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Studio</button><button type="button" aria-pressed="false">Showroom</button><button type="button" aria-pressed="false">At home</button></div></div>
+<div class="pbody"><span class="pcode">MJ-18</span><h3>Sky Blue Gold-Inlay Majlis</h3><p>Sky-blue lacquered frames with gold-inlay carved panels, silver-grey striped upholstery and a blue glass-top coffee table.</p><p class="fin"><b>Finish</b> Sky blue, gold, silver</p><button class="pill" type="button" data-design="MJ-18 Sky Blue Gold-Inlay Majlis">Ask about this design</button></div>
+</article>
+<article class="mj" id="mj-19">
+  <div><figure class="view" data-views>
+    <img class="v nat" src="mj19-a.webp" loading="lazy" width="1200" height="512" alt="DURSA Rose Beige Carved Majlis, wide view" decoding="async">
+    <img class="v nat" src="mj19-b.webp" loading="lazy" hidden width="1200" height="674" alt="DURSA Rose Beige Carved Majlis, close-up" decoding="async">
+  </figure><div class="tabs" role="group" aria-label="View"><button type="button" aria-pressed="true">Wide view</button><button type="button" aria-pressed="false">Close-up</button></div></div>
+  <div class="pbody"><span class="pcode">MJ-19</span><h3>Rose Beige Carved Majlis</h3><p>Rose-beige frames with white carved ovals, gold-beige damask upholstery and a matching octagonal coffee table.</p><p class="fin"><b>Finish</b> Rose beige, ivory, gold</p><button class="pill" type="button" data-design="MJ-19 Rose Beige Carved Majlis">Ask about this design</button></div>
+</article>
+  </div></section>
+  <section class="psec alt" id="curtains" aria-labelledby="h-c"><div class="wrap"><div class="sec-head"><span class="eyebrow">02 · Curtains</span><h2 id="h-c">Elegance in every fold</h2><hr class="rule"><p>Seventeen curtain designs, made to match your majlis.</p></div>
+<div class="cgal" style="max-width:900px;margin-inline:auto"><figure><img src="curtain-04.webp" style="aspect-ratio:4/5;object-fit:cover" alt="Navy and ivory curtain" loading="lazy" decoding="async"></figure><figure><img src="curtain-09.webp" style="aspect-ratio:4/5;object-fit:cover" alt="Peacock teal curtain" loading="lazy" decoding="async"></figure></div>
+<div style="text-align:center;margin-top:clamp(28px,4vw,48px)"><a class="pill solid" href="curtains.html">See all 17 curtain designs</a></div></div></section>
+
+  <section class="psec" id="sofas" aria-labelledby="h-s"><div class="wrap">
+    <div class="sec-head"><span class="eyebrow">03 · Sofas &amp; Seating</span><h2 id="h-s">Sofa Sets</h2><hr class="rule"><p>Modern sofas, armchairs and lounge sets for the family living room. Prices on request.</p></div>
+<article class="mj" id="lv-01">
+  <div><figure class="view"><img class="v nat" src="sofa-set-white.webp" loading="lazy" width="1080" height="718" alt="Ivory Bouclé Lounge Set" decoding="async"></figure></div>
+  <div class="pbody"><span class="pcode">LV-01</span><h3>Ivory Bouclé Lounge Set</h3><p>Three-seat sofa, two-seat sofa and two rounded armchairs in ivory bouclé, with black side tables and a round black coffee table.</p><p class="fin"><b>Finish</b> Ivory, black</p><button class="pill" type="button" data-design="LV-01 Ivory Bouclé Lounge Set">Ask about this design</button></div>
+</article>
+<article class="mj" id="lv-02">
+  <div><figure class="view"><img class="v nat" src="sofa-set-beige.webp" loading="lazy" width="1080" height="720" alt="Beige Channel Sofa Set" decoding="async"></figure></div>
+  <div class="pbody"><span class="pcode">LV-02</span><h3>Beige Channel Sofa Set</h3><p>Three-seat sofa and armchairs with vertical channel stitching, tan piping and scatter cushions, on slim dark metal legs.</p><p class="fin"><b>Finish</b> Beige, tan</p><button class="pill" type="button" data-design="LV-02 Beige Channel Sofa Set">Ask about this design</button></div>
+</article>
+<article class="mj" id="lv-03">
+  <div><figure class="view"><img class="v nat" src="sofa-grey-armchair.webp" loading="lazy" width="1080" height="847" alt="Grey Chesterfield Sofa and Armchair" decoding="async"></figure></div>
+  <div class="pbody"><span class="pcode">LV-03</span><h3>Grey Chesterfield Sofa and Armchair</h3><p>Button-tufted back with rolled channel arms and carved wood arm accents. The armchair has a matching tufted back.</p><p class="fin"><b>Finish</b> Grey, walnut</p><button class="pill" type="button" data-design="LV-03 Grey Chesterfield Sofa and Armchair">Ask about this design</button></div>
+</article>
+<article class="mj" id="lv-04">
+  <div><figure class="view"><img class="v nat" src="sofa-grey-tufted.webp" loading="lazy" width="1080" height="891" alt="Grey Tufted Three-Seater" decoding="async"></figure></div>
+  <div class="pbody"><span class="pcode">LV-04</span><h3>Grey Tufted Three-Seater</h3><p>Deep button-tufted back, channel-stitched arms, a quilted seat and tapered wood legs.</p><p class="fin"><b>Finish</b> Grey, walnut</p><button class="pill" type="button" data-design="LV-04 Grey Tufted Three-Seater">Ask about this design</button></div>
+</article>
+  </div></section>
+
+  <section class="psec" id="order" aria-labelledby="h-o">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">How to order</span><h2 id="h-o">Three simple steps</h2><hr class="rule"></div>
+      <div class="steps">
+        <div><b>1</b><h3>Choose</h3><p>Pick a design above and tap "Ask about this design".</p></div>
+        <div><b>2</b><h3>Measure</h3><p>Tell us the room size, or the window width and height for curtains.</p></div>
+        <div><b>3</b><h3>Confirm</h3><p>Our team confirms fabric, finish, price and delivery.</p></div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="callband" id="contact" aria-labelledby="h-call">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Order or ask</span>
+        <h2 id="h-call" style="margin-top:14px">Call the DURSA <em>team</em></h2>
+        <hr class="rule">
+        <p>Tell us the design code, your room size and the finish you want. Prices are given on request. Showroom: Sigara Tera, NOC Branch, Harar.</p>
+      </div>
+      <div class="numbers">
+        <a class="num" href="tel:+251982828234"><span>Call</span><b>098 282 8234</b></a>
+        <a class="num" href="tel:+251982828234"><span>Call</span><b>098 282 8234</b></a>
+        <a class="num" href="https://t.me/+251982828234" target="_blank" rel="noopener"><span>Telegram</span><b>098 282 8234</b></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="enq" id="enq" role="region" aria-label="Your enquiry" aria-live="polite">
+  <div class="in">
+    <pre id="enq-text"></pre>
+    <div class="row">
+      <button class="pill gold" type="button" id="enq-copy">Copy message</button>
+      <a class="pill gold" href="https://t.me/+251982828234" target="_blank" rel="noopener">Open Telegram</a>
+      <a class="pill gold" href="tel:+251982828234">Call 098 282 8234</a>
+      <button class="x" type="button" id="enq-close" aria-label="Close">&times;</button>
+    </div>
+    <small id="enq-note">Nothing is sent from this page. Paste the message in Telegram, or call us.</small>
+  </div>
+</div>
+
+<section class="mapband" id="find-us" aria-labelledby="h-map"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Our showrooms</span><h2 id="h-map">Find us in Harar</h2><hr class="rule"><p>Choose a branch to see it on the map. Please call to confirm opening hours before visiting.</p></div>
+  <div class="maptabs" role="group" aria-label="Choose branch"><button type="button" data-q="DURSA Arabian Majlis Sigara Tera Harar Ethiopia" aria-pressed="true">Sigara Tera Branch</button><button type="button" data-q="DURSA Arabian Majlis NOC Harar Ethiopia" aria-pressed="false">NOC SOS HG School Branch</button></div>
+  <div class="mapframe"><iframe id="map-frame" title="Map: Sigara Tera Branch" src="https://www.google.com/maps?q=DURSA%20Arabian%20Majlis%20Sigara%20Tera%20Harar%20Ethiopia&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="mapopen"><a class="pill" id="map-open" href="https://www.google.com/maps/search/?api=1&amp;query=DURSA%20Arabian%20Majlis%20Sigara%20Tera%20Harar%20Ethiopia" target="_blank" rel="noopener">Open in Google Maps</a></div>
+</div></section>
+<footer class="sitefoot">
+  <svg class="edge" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true"><path class="fill" d="M0 64V30C220 8 520 24 690 22C705 22 712 10 720 3C728 10 735 22 750 22C920 24 1220 8 1440 30V64Z"/><path class="line" d="M0 30C220 8 520 24 690 22C705 22 712 10 720 3C728 10 735 22 750 22C920 24 1220 8 1440 30"/></svg>
+  <div class="body"><div class="wrap cols">
+    <div class="col brandcol">
+      <div><a href="index.html" aria-label="DURSA Arabian Majlis &amp; Furniture, home"><img class="logo" src="dursa-logo.webp" width="640" height="640" alt="DURSA Arabian Majlis &amp; Furniture" loading="lazy" decoding="async"></a>
+      <p class="foot-tag">Elegant Furniture for Modern Homes &amp; Traditional Majlis</p></div>
+      <div class="socials" aria-label="DURSA on social media">
+        <a href="https://wa.me/251982828234" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></a>
+        <a href="#" data-todo="facebook" aria-label="Facebook"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2z"/></svg></a>
+        <a href="https://www.instagram.com/dursa_arabian_majlis/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.5"/><path d="M16.5 7.5v.01"/></svg></a>
+        <a href="#" data-todo="youtube" aria-label="YouTube"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg></a>
+        <a href="https://www.tiktok.com/@dursa_arabiya_majlis" target="_blank" rel="noopener" aria-label="TikTok"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+        <a href="https://t.me/+251982828234" target="_blank" rel="noopener" aria-label="Telegram"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"/></svg></a>
+      </div>
+    </div>
+    <div class="col"><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1.5"/><rect x="14" y="4" width="6" height="6" rx="1.5"/><rect x="4" y="14" width="6" height="6" rx="1.5"/><rect x="14" y="14" width="6" height="6" rx="1.5"/></svg>Our Collections</h3><ul>
+      <li><a href="living.html#majlis"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3"/><path d="M3 13a2 2 0 0 1 4 0v2h10v-2a2 2 0 0 1 4 0v5H3z"/></svg>Arabian Majlis</a></li>
+      <li><a href="bedroom.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18V7M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="11" r="1.6"/></svg>Bedroom</a></li>
+      <li><a href="bedroom.html#wardrobes"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M12 3v18M9.5 12v2M14.5 12v2"/></svg>Wardrobes</a></li>
+      <li><a href="index.html#dining"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h16M6 9v10M18 9v10M9 9V6h6v3"/></svg>Dining Room</a></li>
+      <li><a href="curtains.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16M6 4c0 6-1 11-2 16h5c0-5 0-10-1-16M18 4c0 6 1 11 2 16h-5c0-5 0-10 1-16"/></svg>Curtains</a></li>
+      <li><a href="curtains.html#rooms"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="6" width="16" height="12" rx="1.5"/><path d="M12 8.5l3 3.5-3 3.5-3-3.5z"/></svg>Carpets</a></li>
+    </ul></div>
+    <div class="col"><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8v.01"/></svg>Quick Links</h3><ul>
+      <li><a href="index.html#gallery">Our Showroom</a></li>
+      <li><a href="index.html#catalogue">Catalogue</a></li>
+      <li><a href="index.html#visit">Visit Us</a></li>
+      <li><a href="#find-us">Our Branches</a></li>
+      <li><a href="index.html#quote">Request a Quote</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul></div>
+    <div class="col"><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.6-6-10.5a6 6 0 0 1 12 0C18 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.2"/></svg>Our Branches</h3><ul class="branchlist">
+      <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.6-6-10.5a6 6 0 0 1 12 0C18 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.2"/></svg><span><b>Sigara Tera Branch</b><small>Harar, Ethiopia</small></span><a class="ext" href="https://www.google.com/maps/search/?api=1&amp;query=DURSA%20Arabian%20Majlis%20Sigara%20Tera%20Harar%20Ethiopia" target="_blank" rel="noopener" aria-label="Sigara Tera Branch on Google Maps"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></li>
+      <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.6-6-10.5a6 6 0 0 1 12 0C18 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.2"/></svg><span><b>NOC SOS HG School Branch</b><small>Harar, Ethiopia</small></span><a class="ext" href="https://www.google.com/maps/search/?api=1&amp;query=DURSA%20Arabian%20Majlis%20NOC%20Harar%20Ethiopia" target="_blank" rel="noopener" aria-label="NOC SOS HG School Branch on Google Maps"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></li>
+    </ul><a class="footmap" href="#find-us"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4L3 6.5v13L9 17l6 3 6-2.5v-13L15 7z"/><path d="M9 4v13M15 7v13"/></svg>View on Google Maps</a></div>
+    <div class="col"><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Get in Touch</h3><ul class="contactlist">
+      <li><a href="tel:+251982828234"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>098 282 8234</a></li>
+      <li><a href="tel:+251982828234"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>098 282 8234</a></li>
+      <li><a href="https://t.me/+251982828234" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"/></svg>098 282 8234</a></li>
+      <li><a href="mailto:dursamajlisfarniture@gmail.com"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>dursamajlisfarniture@gmail.com</a></li>
+    </ul></div>
+  </div></div>
+  <div class="bar"><div class="wrap"><span>&copy; 2026 DURSA Arabian Majlis &amp; Furniture. All rights reserved.</span><nav aria-label="Footer"><a href="index.html">Home</a><a href="contact.html">Contact</a><a href="#top">Back to top &uarr;</a></nav></div></div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menu-btn'),nav=document.getElementById('mobile-nav');
+  function setMenu(o){nav.classList.toggle('open',o);btn.setAttribute('aria-expanded',o?'true':'false');btn.setAttribute('aria-label',o?'Close menu':'Open menu');}
+  btn.addEventListener('click',function(){setMenu(!nav.classList.contains('open'));});
+  nav.addEventListener('click',function(e){if(e.target.closest('a'))setMenu(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('open')){setMenu(false);btn.focus();}});
+  window.matchMedia('(min-width:1101px)').addEventListener('change',function(e){if(e.matches)setMenu(false);});
+  var enq=document.getElementById('enq'),txt=document.getElementById('enq-text'),note=document.getElementById('enq-note'),cur='',enqTrigger=null;
+  document.querySelectorAll('[data-design]').forEach(function(b){
+    b.addEventListener('click',function(){
+      enqTrigger=b;cur='Hello DURSA, I would like a quote.\nDesign: '+b.getAttribute('data-design');
+      txt.textContent=cur;note.textContent='Nothing is sent from this page. Paste the message in Telegram, or call us.';enq.classList.add('open');document.getElementById('enq-copy').focus();
+    });
+  });
+  function closeEnquiry(){enq.classList.remove('open');if(enqTrigger)enqTrigger.focus();}
+  document.getElementById('enq-close').addEventListener('click',closeEnquiry);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&enq.classList.contains('open'))closeEnquiry();});
+  document.getElementById('enq-copy').addEventListener('click',function(){
+    function fb(){var r=document.createRange();r.selectNodeContents(txt);var s=getSelection();s.removeAllRanges();s.addRange(r);note.textContent='Message selected. Press copy on your device, then paste it in Telegram.';}
+    try{navigator.clipboard.writeText(cur).then(function(){note.textContent='Copied. Paste it in Telegram, or call 098 282 8234.';},fb);}catch(e){fb();}
+  });
+})();
+</script>
+<script>
+(function(){document.querySelectorAll('.mj').forEach(function(a){var imgs=a.querySelectorAll('.v'),bt=a.querySelectorAll('.tabs button');bt.forEach(function(b,i){b.addEventListener('click',function(){imgs.forEach(function(m,j){m.hidden=j!==i});bt.forEach(function(x,j){x.setAttribute('aria-pressed',j===i?'true':'false')})})})})})();
+</script>
+<script src="footer.js"></script>
+</body>
+</html>
