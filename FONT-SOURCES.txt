@@ -1,0 +1,4 @@
+Lovelo Black: Fontfabric / Renzler Design. https://www.fontfabric.com/fonts/lovelo/
+Webfont distribution: https://github.com/lorenz/lovelo-fontface
+Montserrat: Google Fonts. https://fonts.google.com/specimen/Montserrat
+Montserrat license: Montserrat-OFL.txt
