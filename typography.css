@@ -1,12 +1,15 @@
-@font-face{font-family:Lovelo;src:url("fonts/lovelo-black.woff2") format("woff2");font-style:normal;font-weight:700;font-display:swap}
-@font-face{font-family:Montserrat;src:url("fonts/montserrat-400.woff") format("woff");font-style:normal;font-weight:400;font-display:swap}
-@font-face{font-family:Montserrat;src:url("fonts/montserrat-500.woff") format("woff");font-style:normal;font-weight:500;font-display:swap}
-@font-face{font-family:Montserrat;src:url("fonts/montserrat-600.woff") format("woff");font-style:normal;font-weight:600;font-display:swap}
-@font-face{font-family:Montserrat;src:url("fonts/montserrat-700.woff") format("woff");font-style:normal;font-weight:700;font-display:swap}
+/* Metric-matched fallbacks to limit layout shift while the web fonts load. */
+@font-face{font-family:"Lovelo Fallback";src:local("Arial Black"),local("Arial");size-adjust:104%;ascent-override:92%;descent-override:24%;line-gap-override:0%}
+@font-face{font-family:"Montserrat Fallback";src:local("Arial");size-adjust:112%;ascent-override:86%;descent-override:22%;line-gap-override:0%}
+@font-face{font-family:Lovelo;src:url("lovelo-black.woff2") format("woff2");font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:Montserrat;src:url("montserrat-400.woff") format("woff");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:Montserrat;src:url("montserrat-500.woff") format("woff");font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:Montserrat;src:url("montserrat-600.woff") format("woff");font-style:normal;font-weight:600;font-display:swap}
+@font-face{font-family:Montserrat;src:url("montserrat-700.woff") format("woff");font-style:normal;font-weight:700;font-display:swap}
 /* Lovelo Black headings paired with Montserrat body and interface text. */
 :root{
- --body:"Montserrat","Segoe UI",Arial,sans-serif;
- --display:"Lovelo","Montserrat",Arial,sans-serif;
+ --body:"Montserrat","Montserrat Fallback","Segoe UI",Arial,sans-serif;
+ --display:"Lovelo","Lovelo Fallback","Montserrat",Arial,sans-serif;
  --type-body:1.0625rem;
  --type-small:.875rem;
 }

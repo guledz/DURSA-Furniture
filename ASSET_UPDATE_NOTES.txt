@@ -1,0 +1,7 @@
+Added ten supplied images to existing products, without adding duplicate listings.
+MJ-14, MJ-15 and MJ-18: Studio, Showroom, At home.
+MJ-17: Studio plus retained original wide/detail photographs; styled showroom/home views still missing.
+Source images retained unchanged in the uploaded attachments. Original website photos retained in package.
+Studio branding remains pending: supplied studio images have no logo. No logo was invented or altered.
+MJ-15 and MJ-19 appear visually similar; neither listing was removed without a definitive product reconciliation.
+Only this asset integration was performed; broader revision checklist remains pending.
